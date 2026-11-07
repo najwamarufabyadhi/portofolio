@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Mail, Github, Linkedin, Copy, Check, MessageSquare, ArrowUpRight } from "lucide-react";
 import profileData from "@/data/profile.json";
+import { smoothScrollTo } from "./SmoothScroll";
 
 export const ContactOutro: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -205,7 +206,10 @@ export const ContactOutro: React.FC = () => {
           &copy; 2025 Muhammad Najwa Maruf Abyadhi. All rights reserved.
         </div>
         <div className="flex items-center gap-4">
-          <span className="hover:text-text-main cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <span
+            className="hover:text-text-main cursor-pointer"
+            onClick={() => smoothScrollTo(0, 0)}
+          >
             BACK TO TOP ▲
           </span>
         </div>

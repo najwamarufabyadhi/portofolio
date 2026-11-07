@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "lenis/dist/lenis.css";
+
 :root {
   --bg-dark: #060b11;
   --bg-card: rgba(15, 39, 68, 0.25);
@@ -10,6 +12,31 @@
   --highlight-cyan: #79c0ff;
   --text-main: #e6edf3;
   --text-muted: #8b949e;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }
 
 body {

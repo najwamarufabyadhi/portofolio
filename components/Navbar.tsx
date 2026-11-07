@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { smoothScrollTo } from "./SmoothScroll";
 
 interface NavbarProps {
   activeSection: string;
@@ -19,10 +20,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   }, []);
 
   const scrollTo = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
+    smoothScrollTo(`#${id}`, -20);
   };
 
   return (

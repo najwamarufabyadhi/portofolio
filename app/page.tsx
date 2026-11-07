@@ -8,6 +8,7 @@ import { ProjectShowcase, Project } from "@/components/ProjectShowcase";
 import { ContactOutro } from "@/components/ContactOutro";
 import { OptionsModal } from "@/components/OptionsModal";
 import { ProjectDetailModal } from "@/components/ProjectDetailModal";
+import { SmoothScroll, smoothScrollTo } from "@/components/SmoothScroll";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("start");
@@ -39,14 +40,14 @@ export default function Home() {
   }, []);
 
   const handleStartClick = () => {
-    const el = document.getElementById("profil");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
+    smoothScrollTo("#profil", -20);
   };
 
   return (
     <main className="relative min-h-screen bg-obsidian text-text-main">
+      {/* Silky Inertia Smooth Scroll Provider */}
+      <SmoothScroll />
+
       {/* Floating Capsule Navbar (Screens 2 - 4) */}
       <Navbar activeSection={activeSection} />
 
