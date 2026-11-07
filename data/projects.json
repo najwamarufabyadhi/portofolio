@@ -1,0 +1,75 @@
+[
+  {
+    "id": "project-01",
+    "title": "Expense & Budget Tracker",
+    "slug": "expense-tracker",
+    "category": "Full Stack",
+    "badge": "Production",
+    "description": "Aplikasi manajemen anggaran dan pencatatan transaksi harian cerdas dengan visualisasi analitik interaktif, ringkasan arus kas, dan ekspor laporan terperinci.",
+    "thumbnail": "assets/images/projects/project-1.svg",
+    "technologies": ["React", "TypeScript", "Tailwind CSS", "Supabase", "Chart.js"],
+    "liveUrl": "https://expense-tracker-demo.vercel.app",
+    "repoUrl": "https://github.com/najwamaruf/expense-tracker",
+    "featured": true,
+    "highlights": [
+      "Real-time database updates via Supabase WebSockets",
+      "Interactive data visualizations with Chart.js",
+      "Complete JWT auth flow with role-based policies"
+    ]
+  },
+  {
+    "id": "project-02",
+    "title": "Corporate Hub & Headless CMS",
+    "slug": "company-cms",
+    "category": "Frontend",
+    "badge": "Personal Project",
+    "description": "Website profil korporat interaktif dengan integrasi headless CMS, dynamic content fetching, dan skor audit Google Lighthouse di atas 98 pada semua metrik.",
+    "thumbnail": "assets/images/projects/project-2.svg",
+    "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "Contentful"],
+    "liveUrl": "https://company-demo.vercel.app",
+    "repoUrl": "https://github.com/najwamaruf/company-cms",
+    "featured": true,
+    "highlights": [
+      "Incremental Static Regeneration (ISR) for instant rendering",
+      "Automated OpenGraph card generation for social sharing",
+      "Lighthouse 100/100 performance score"
+    ]
+  },
+  {
+    "id": "project-03",
+    "title": "Resilient Micro-API Gateway",
+    "slug": "api-gateway",
+    "category": "Backend",
+    "badge": "Open Source",
+    "description": "Layanan API Gateway berlatensi rendah dengan rate-limiting terdistribusi via Redis, validasi skema runtime, serta monitoring endpoint real-time.",
+    "thumbnail": "assets/images/projects/project-3.svg",
+    "technologies": ["Node.js", "Express", "Redis", "Docker", "PostgreSQL"],
+    "liveUrl": "https://api-gateway-demo.vercel.app",
+    "repoUrl": "https://github.com/najwamaruf/api-gateway",
+    "featured": true,
+    "highlights": [
+      "Token bucket rate limiting with Redis cluster support",
+      "Sub-15ms proxy response time",
+      "Automated Swagger / OpenAPI 3.0 documentation"
+    ]
+  },
+  {
+    "id": "project-04",
+    "title": "Developer Design System & UI Kit",
+    "slug": "ui-kit",
+    "category": "Frontend",
+    "badge": "Utility",
+    "description": "Koleksi komponen UI modern yang dapat diakses (WCAG 2.1 compliant), didukung Tailwind CSS, dengan dukungan tema gelap/terang dan live playground.",
+    "thumbnail": "assets/images/projects/project-4.svg",
+    "technologies": ["Tailwind CSS", "JavaScript", "HTML5", "Vercel"],
+    "liveUrl": "https://uikit-demo.vercel.app",
+    "repoUrl": "https://github.com/najwamaruf/developer-uikit",
+    "featured": false,
+    "highlights": [
+      "Zero runtime dependencies for maximum execution speed",
+      "Fully responsive and keyboard navigable",
+      "Dark mode first design language"
+    ]
+  }
+]
+

@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark: #060b11;
+  --bg-card: rgba(15, 39, 68, 0.25);
+  --accent-crimson: #8c1123;
+  --accent-blue-glow: #1e4e7a;
+  --highlight-cyan: #79c0ff;
+  --text-main: #e6edf3;
+  --text-muted: #8b949e;
+}
+
+body {
+  background-color: #060b11;
+  color: #e6edf3;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #060b11;
+}
+::-webkit-scrollbar-thumb {
+  background: #172a3d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e4e7a;
+}
+
+/* Ambient Deep Space Mesh Background */
+.bg-deep-space {
+  background-color: #060b11;
+  background-image: 
+    radial-gradient(circle at 85% 15%, rgba(30, 78, 122, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 15% 85%, rgba(140, 17, 35, 0.18) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(15, 39, 68, 0.15) 0%, transparent 60%);
+  background-attachment: fixed;
+}
+
+/* Glowing Rim Halo for Portrait */
+.portrait-rim-glow {
+  position: relative;
+}
+.portrait-rim-glow::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: inherit;
+  background: radial-gradient(circle, rgba(121, 192, 255, 0.35) 0%, rgba(30, 78, 122, 0.2) 50%, transparent 75%);
+  filter: blur(25px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Glassmorphism Capsule Navbar */
+.capsule-nav {
+  background: rgba(6, 11, 17, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(121, 192, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* Bento Card Style */
+.bento-card {
+  background: linear-gradient(135deg, rgba(15, 39, 68, 0.22) 0%, rgba(6, 11, 17, 0.7) 100%);
+  border: 1px solid rgba(23, 42, 61, 0.8);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.bento-card:hover {
+  border-color: rgba(121, 192, 255, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(88, 166, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Subtle Grid Texture */
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(23, 42, 61, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 42, 61, 0.15) 1px, transparent 1px);
+}
+
+/* Terminal / Arcade Blinking Cursor */
+@keyframes arcade-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+.animate-arcade-pulse {
+  animation: arcade-pulse 1.8s infinite ease-in-out;
+}
+

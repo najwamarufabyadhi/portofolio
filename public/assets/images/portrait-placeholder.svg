@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rimGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#79c0ff" />
+      <stop offset="50%" stop-color="#1e4e7a" />
+      <stop offset="100%" stop-color="#060b11" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f293d" />
+      <stop offset="100%" stop-color="#0b1324" />
+    </linearGradient>
+    <radialGradient id="faceGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#fbd38d" />
+      <stop offset="70%" stop-color="#d69e2e" />
+      <stop offset="100%" stop-color="#744210" />
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Blue Rim Halo behind head -->
+  <circle cx="250" cy="220" r="150" fill="#1e4e7a" opacity="0.3" filter="blur(40px)" />
+  <circle cx="320" cy="200" r="90" fill="#79c0ff" opacity="0.25" filter="blur(25px)" />
+
+  <!-- Floating Warm Embers / Sparks (as in reference image) -->
+  <circle cx="120" cy="480" r="2" fill="#fb923c" opacity="0.8" />
+  <circle cx="160" cy="520" r="3" fill="#f97316" opacity="0.9" />
+  <circle cx="380" cy="460" r="2.5" fill="#fb923c" opacity="0.8" />
+  <circle cx="420" cy="510" r="1.5" fill="#f97316" opacity="0.7" />
+  <circle cx="100" cy="350" r="2" fill="#fbbf24" opacity="0.6" />
+
+  <!-- Shoulders & Torso Silhouette -->
+  <path d="M 80 650 C 90 520, 150 420, 220 400 L 250 400 L 280 400 C 350 420, 410 520, 420 650 Z" fill="url(#suitGrad)" stroke="#1e4e7a" stroke-width="1.5" />
+  <!-- Subtle Collar / Shirt Line -->
+  <path d="M 220 400 L 250 445 L 280 400" fill="none" stroke="#334155" stroke-width="2" />
+  <path d="M 250 445 L 250 560" fill="none" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Neck -->
+  <path d="M 215 320 L 215 410 L 285 410 L 285 320 Z" fill="#b45309" opacity="0.8" />
+
+  <!-- Head / Face Silhouette -->
+  <path d="M 180 230 C 180 140, 230 110, 280 110 C 330 110, 340 160, 340 230 C 340 300, 305 340, 255 340 C 205 340, 180 300, 180 230 Z" fill="#b45309" opacity="0.6" />
+  
+  <!-- Sleek Hair Stylized Contour -->
+  <path d="M 175 220 C 170 140, 220 90, 280 90 C 335 90, 350 130, 350 180 C 330 165, 305 160, 275 165 C 235 170, 205 195, 175 220 Z" fill="#0f172a" stroke="#79c0ff" stroke-width="1.5" />
+
+  <!-- Blue Rim Light Highlight across back & shoulder edge -->
+  <path d="M 340 160 C 350 220, 335 290, 320 330 C 355 370, 395 450, 415 620" fill="none" stroke="#79c0ff" stroke-width="3.5" stroke-linecap="round" opacity="0.85" filter="drop-shadow(0 0 8px #58a6ff)" />
+</svg>
+

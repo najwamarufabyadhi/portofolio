@@ -1,0 +1,79 @@
+{
+  "name": "Muhammad Najwa Maruf Abyadhi",
+  "shortName": "Najwa Maruf",
+  "title": "Full-Stack Software Engineer",
+  "badge": "Available for High-Impact Roles & Projects",
+  "tagline": "Architecting resilient, high-performance web applications and scalable digital solutions.",
+  "bio": "Software developer focused on building modern, performant web applications with clean architecture. Experienced in designing robust frontend interfaces, low-latency APIs, and automated CI/CD deployment pipelines on Vercel.",
+  "location": "Indonesia",
+  "email": "najwamaruf.dev@gmail.com",
+  "resumeUrl": "#resume",
+  "socials": {
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "email": "mailto:najwamaruf.dev@gmail.com"
+  },
+  "stats": [
+    { "label": "Interactive Demos", "value": "100%", "description": "Live hosted on Vercel" },
+    { "label": "Avg. Load Latency", "value": "< 1.0s", "description": "Optimized Core Web Vitals" },
+    { "label": "Code Repositories", "value": "Clean", "description": "Public & production-ready" },
+    { "label": "Delivery Pipeline", "value": "Automated", "description": "Git push to Vercel CI/CD" }
+  ],
+  "techStack": {
+    "frontend": [
+      { "name": "React", "level": "Advanced", "icon": "react" },
+      { "name": "Next.js", "level": "Advanced", "icon": "nextjs" },
+      { "name": "TypeScript", "level": "Advanced", "icon": "typescript" },
+      { "name": "Tailwind CSS", "level": "Advanced", "icon": "tailwind" },
+      { "name": "HTML5 / CSS3", "level": "Master", "icon": "html5" },
+      { "name": "Vue.js", "level": "Intermediate", "icon": "vue" }
+    ],
+    "backend": [
+      { "name": "Node.js", "level": "Advanced", "icon": "nodejs" },
+      { "name": "Express.js", "level": "Advanced", "icon": "express" },
+      { "name": "Go (Golang)", "level": "Intermediate", "icon": "go" },
+      { "name": "Python / FastAPI", "level": "Intermediate", "icon": "python" },
+      { "name": "RESTful APIs", "level": "Advanced", "icon": "api" },
+      { "name": "GraphQL", "level": "Intermediate", "icon": "graphql" }
+    ],
+    "database": [
+      { "name": "PostgreSQL", "level": "Advanced", "icon": "postgresql" },
+      { "name": "Supabase", "level": "Advanced", "icon": "supabase" },
+      { "name": "MongoDB", "level": "Intermediate", "icon": "mongodb" },
+      { "name": "Redis", "level": "Intermediate", "icon": "redis" },
+      { "name": "Prisma ORM", "level": "Advanced", "icon": "prisma" }
+    ],
+    "devops": [
+      { "name": "Vercel", "level": "Master", "icon": "vercel" },
+      { "name": "Git & GitHub", "level": "Advanced", "icon": "git" },
+      { "name": "GitHub Actions", "level": "Intermediate", "icon": "actions" },
+      { "name": "Docker", "level": "Intermediate", "icon": "docker" },
+      { "name": "Linux / Bash", "level": "Intermediate", "icon": "linux" },
+      { "name": "Postman / Bruno", "level": "Advanced", "icon": "postman" }
+    ]
+  },
+  "experiences": [
+    {
+      "period": "2024 — Present",
+      "role": "Full-Stack Software Engineer",
+      "company": "Independent / Client Projects",
+      "description": "Designing and deploying production-grade web applications, federated micro-apps, and full-stack solutions with automated Vercel CI/CD pipelines.",
+      "tags": ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Vercel"]
+    },
+    {
+      "period": "2023 — 2024",
+      "role": "Frontend & Web Application Developer",
+      "company": "Digital Solutions & Open Source",
+      "description": "Constructed responsive single-page web applications with emphasis on sub-second load times, accessibility, and high Lighthouse scores (>95).",
+      "tags": ["React", "JavaScript (ES6+)", "REST APIs", "UI/UX Architecture"]
+    },
+    {
+      "period": "2022 — 2023",
+      "role": "Computer Science & Software Foundations",
+      "company": "Technical Training & Education",
+      "description": "Studied core data structures, algorithms, database management systems, and modern software design patterns.",
+      "tags": ["Data Structures", "Algorithms", "Databases", "System Design"]
+    }
+  ]
+}
+
