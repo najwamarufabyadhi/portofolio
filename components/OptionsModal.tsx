@@ -88,6 +88,21 @@ export const OptionsModal: React.FC<OptionsModalProps> = ({ isOpen, onClose }) =
             </ul>
           </div>
 
+          {/* Arcade Keyboard Navigation Map */}
+          <div className="p-3.5 rounded-xl bg-obsidian-deep/80 border border-obsidian-border/70">
+            <div className="text-[11px] font-arcade text-ice font-bold tracking-wider uppercase mb-2">
+              ⌨ ARCADE SHORTCUTS
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[11px] font-mono text-text-muted">
+              <div><kbd className="px-1.5 py-0.5 rounded bg-obsidian-border text-text-main font-bold">1</kbd> Start Screen</div>
+              <div><kbd className="px-1.5 py-0.5 rounded bg-obsidian-border text-text-main font-bold">2</kbd> Profil</div>
+              <div><kbd className="px-1.5 py-0.5 rounded bg-obsidian-border text-text-main font-bold">3</kbd> Projects</div>
+              <div><kbd className="px-1.5 py-0.5 rounded bg-obsidian-border text-text-main font-bold">4</kbd> Contact</div>
+              <div><kbd className="px-1.5 py-0.5 rounded bg-obsidian-border text-text-main font-bold">O</kbd> Options</div>
+              <div><kbd className="px-1.5 py-0.5 rounded bg-obsidian-border text-text-main font-bold">ESC</kbd> Close</div>
+            </div>
+          </div>
+
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 border-t border-obsidian-border">
             <span className="text-xs font-mono text-text-dim">

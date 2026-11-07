@@ -39,6 +39,35 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Keyboard navigation shortcuts
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Don't trigger shortcuts if user is typing in an input
+      if (
+        document.activeElement?.tagName === "INPUT" ||
+        document.activeElement?.tagName === "TEXTAREA"
+      ) {
+        return;
+      }
+
+      const key = e.key.toLowerCase();
+      if (key === "1" || key === "s") {
+        smoothScrollTo("#start", 0);
+      } else if (key === "2" || key === "p") {
+        smoothScrollTo("#profil", -20);
+      } else if (key === "3" || key === "r") {
+        smoothScrollTo("#project", -20);
+      } else if (key === "4" || key === "c") {
+        smoothScrollTo("#contact", -20);
+      } else if (key === "o" || key === "?") {
+        setIsOptionsOpen((prev) => !prev);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   const handleStartClick = () => {
     smoothScrollTo("#profil", -20);
   };
