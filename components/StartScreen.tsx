@@ -68,7 +68,7 @@ export const StartScreen: React.FC<StartScreenProps> = ({
                   alt={profileData.name}
                   fill
                   priority
-                  className="w-full h-full object-cover object-top filter contrast-[1.05]"
+                  className="w-full h-full object-cover object-[center_15%] transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
