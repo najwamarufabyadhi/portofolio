@@ -39,7 +39,7 @@ export const ProfileSection: React.FC = () => {
                   alt={profileData.name}
                   fill
                   priority
-                  className="w-full h-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover object-[center_40%] transition-transform duration-700 group-hover:scale-105"
                 />
 
                 {/* Subtle dark vignette overlay to blend edges with cyber background */}
