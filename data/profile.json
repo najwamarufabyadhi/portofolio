@@ -132,6 +132,23 @@
         "icon": "supabase"
       }
     ],
+    "database": [
+      {
+        "name": "PostgreSQL",
+        "level": "Advanced",
+        "icon": "postgresql"
+      },
+      {
+        "name": "Supabase",
+        "level": "Advanced",
+        "icon": "supabase"
+      },
+      {
+        "name": "Redis",
+        "level": "Intermediate",
+        "icon": "redis"
+      }
+    ],
     "devops": [
       {
         "name": "Vercel",

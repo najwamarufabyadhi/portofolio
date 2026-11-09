@@ -87,10 +87,10 @@ export const ProfileSection: React.FC = () => {
               {/* Glossy App Tiles Grid */}
               <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 sm:gap-4">
                 {[
-                  ...(profileData.techStack.dataAi || []).slice(0, 4),
-                  ...profileData.techStack.frontend.slice(0, 3),
-                  ...profileData.techStack.backend.slice(0, 3),
-                  ...profileData.techStack.devops.slice(0, 2),
+                  ...(profileData.techStack?.dataAi || []).slice(0, 4),
+                  ...(profileData.techStack?.frontend || []).slice(0, 3),
+                  ...(profileData.techStack?.backend || []).slice(0, 3),
+                  ...(profileData.techStack?.devops || []).slice(0, 2),
                 ].map((skill, idx) => {
                   const colors = [
                     "from-amber-500/30 to-orange-700/30 text-amber-300",
