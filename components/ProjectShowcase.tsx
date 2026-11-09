@@ -30,12 +30,15 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
   const [selectedCategory, setSelectedCategory] = useState<string>("ALL");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
-  const categories = ["ALL", "FULL STACK", "FRONTEND", "BACKEND"];
+  const categories = ["ALL", "AI & DATA", "FULL STACK", "FRONTEND", "BACKEND"];
 
   const filteredProjects = useMemo(() => {
     return (initialProjects as Project[]).filter((p) => {
       const matchCat =
         selectedCategory === "ALL" ||
+        (selectedCategory === "AI & DATA" &&
+          (p.category.toUpperCase().includes("AI") ||
+            p.category.toUpperCase().includes("DATA"))) ||
         p.category.toUpperCase().includes(selectedCategory);
       const matchQuery =
         p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||

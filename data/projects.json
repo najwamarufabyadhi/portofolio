@@ -1,6 +1,24 @@
 [
   {
     "id": "project-01",
+    "title": "Customer Behavior & Machine Learning Analytics",
+    "slug": "customer-analytics-ml",
+    "category": "AI & Data",
+    "badge": "Data Science",
+    "description": "Analisis prediktif dan segmentasi perilaku pelanggan terhadap 100.000+ data transaksi. Mengintegrasikan pembersihan data otomatis, analisis RFM, model klasifikasi CNN, dan dashboard KPI interaktif.",
+    "thumbnail": "assets/images/projects/project-data-analytics.svg",
+    "technologies": ["Python", "SQL", "Pandas", "Scikit-Learn", "CNN / PyTorch", "Streamlit"],
+    "liveUrl": "https://customer-analytics-demo.vercel.app",
+    "repoUrl": "https://github.com/najwamaruf/customer-analytics-ml",
+    "featured": true,
+    "highlights": [
+      "Data preprocessing & feature engineering pipeline handling 100k+ transaction records",
+      "Trained deep learning CNN & transfer learning model achieving 96.84% accuracy",
+      "Interactive data visualization delivering actionable customer retention insights"
+    ]
+  },
+  {
+    "id": "project-02",
     "title": "Expense & Budget Tracker",
     "slug": "expense-tracker",
     "category": "Full Stack",
@@ -18,7 +36,7 @@
     ]
   },
   {
-    "id": "project-02",
+    "id": "project-03",
     "title": "Corporate Hub & Headless CMS",
     "slug": "company-cms",
     "category": "Frontend",
@@ -36,7 +54,7 @@
     ]
   },
   {
-    "id": "project-03",
+    "id": "project-04",
     "title": "Resilient Micro-API Gateway",
     "slug": "api-gateway",
     "category": "Backend",
@@ -54,7 +72,7 @@
     ]
   },
   {
-    "id": "project-04",
+    "id": "project-05",
     "title": "Developer Design System & UI Kit",
     "slug": "ui-kit",
     "category": "Frontend",
@@ -72,4 +90,3 @@
     ]
   }
 ]
-

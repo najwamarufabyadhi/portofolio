@@ -1,9 +1,9 @@
 {
   "name": "Muhammad Najwa Maruf Abyadhi",
   "shortName": "Awa",
-  "title": "Full-Stack Software Engineer",
+  "title": "Software Engineer // AI & Data Science",
   "badge": "Available for High-Impact Roles & Projects",
-  "tagline": "Data Sience,Machine Learning, Data Analytics, Architecting resilient, high-performance web applications and scalable digital solutions.",
+  "tagline": "Architecting high-performance web systems and engineering intelligent, data-driven machine learning solutions.",
   "bio": "Bachelor's degree in Computer Science with a specialization in Data Science and Machine Learning. Experience in processing and analyzing data, as well as building deep learning models using CNN and transfer learning. Proficient in Python, SQL, and data visualization to support data-driven decision making. Accustomed to working with large datasets, performing data preprocessing, and comprehensively evaluating model performance.",
   "location": "Indonesia",
   "email": "najwa.maruf.abyadhi@gmail.com",
@@ -25,9 +25,9 @@
       "description": "Optimized Core Web Vitals"
     },
     {
-      "label": "Code Repositories",
-      "value": "Clean",
-      "description": "Public & production-ready"
+      "label": "Data & Models",
+      "value": "CNN / ML",
+      "description": "Transfer learning & analytics"
     },
     {
       "label": "Delivery Pipeline",
@@ -36,6 +36,38 @@
     }
   ],
   "techStack": {
+    "dataAi": [
+      {
+        "name": "Python",
+        "level": "Advanced",
+        "icon": "python"
+      },
+      {
+        "name": "SQL",
+        "level": "Advanced",
+        "icon": "sql"
+      },
+      {
+        "name": "Pandas / NumPy",
+        "level": "Advanced",
+        "icon": "pandas"
+      },
+      {
+        "name": "CNN / Transfer Learning",
+        "level": "Advanced",
+        "icon": "cnn"
+      },
+      {
+        "name": "Scikit-Learn",
+        "level": "Advanced",
+        "icon": "scikit"
+      },
+      {
+        "name": "PyTorch / TensorFlow",
+        "level": "Intermediate",
+        "icon": "pytorch"
+      }
+    ],
     "frontend": [
       {
         "name": "React",
@@ -80,27 +112,15 @@
         "icon": "express"
       },
       {
-        "name": "Go (Golang)",
+        "name": "FastAPI",
         "level": "Intermediate",
-        "icon": "go"
-      },
-      {
-        "name": "Python / FastAPI",
-        "level": "Intermediate",
-        "icon": "python"
+        "icon": "fastapi"
       },
       {
         "name": "RESTful APIs",
         "level": "Advanced",
         "icon": "api"
       },
-      {
-        "name": "GraphQL",
-        "level": "Intermediate",
-        "icon": "graphql"
-      }
-    ],
-    "database": [
       {
         "name": "PostgreSQL",
         "level": "Advanced",
@@ -110,21 +130,6 @@
         "name": "Supabase",
         "level": "Advanced",
         "icon": "supabase"
-      },
-      {
-        "name": "MongoDB",
-        "level": "Intermediate",
-        "icon": "mongodb"
-      },
-      {
-        "name": "Redis",
-        "level": "Intermediate",
-        "icon": "redis"
-      },
-      {
-        "name": "Prisma ORM",
-        "level": "Advanced",
-        "icon": "prisma"
       }
     ],
     "devops": [
@@ -139,14 +144,19 @@
         "icon": "git"
       },
       {
-        "name": "GitHub Actions",
+        "name": "Docker",
         "level": "Intermediate",
-        "icon": "actions"
+        "icon": "docker"
       },
       {
         "name": "Linux / Bash",
         "level": "Intermediate",
         "icon": "linux"
+      },
+      {
+        "name": "GitHub Actions",
+        "level": "Intermediate",
+        "icon": "actions"
       },
       {
         "name": "Postman / Bruno",
@@ -158,11 +168,12 @@
   "experiences": [
     {
       "period": "2024 — Present",
-      "role": "Full-Stack Software Engineer",
+      "role": "Software Engineer // AI & Data Solutions",
       "company": "Independent / Client Projects",
-      "description": "Designing and deploying production-grade web applications, federated micro-apps, and full-stack solutions with automated Vercel CI/CD pipelines.",
+      "description": "Designing and deploying production-grade web applications, machine learning integration, and federated micro-apps with automated CI/CD pipelines.",
       "tags": [
         "Next.js",
+        "Python",
         "TypeScript",
         "Tailwind CSS",
         "PostgreSQL",
@@ -171,26 +182,28 @@
     },
     {
       "period": "2023 — 2024",
-      "role": "Frontend & Web Application Developer",
-      "company": "Digital Solutions & Open Source",
-      "description": "Constructed responsive single-page web applications with emphasis on sub-second load times, accessibility, and high Lighthouse scores (>95).",
+      "role": "Data Analyst & Web Developer",
+      "company": "Digital Solutions & Research",
+      "description": "Conducted exploratory data analysis, data cleaning pipelines, and built responsive web applications with sub-second latency.",
       "tags": [
+        "Python",
+        "SQL",
         "React",
-        "JavaScript (ES6+)",
-        "REST APIs",
-        "UI/UX Architecture"
+        "Pandas",
+        "Data Visualization"
       ]
     },
     {
-      "period": "2020 — 2025",
-      "role": "Computer Science",
-      "company": "Technical Training & Education",
-      "description": "Studied core data structures, algorithms, database management systems, and modern software design patterns.",
+      "period": "2020 — 2024",
+      "role": "Bachelor of Computer Science",
+      "company": "University Degree (Data Science & ML)",
+      "description": "Specialized in Data Science & Machine Learning. Built deep learning models using CNN and transfer learning, large dataset preprocessing, and SQL analytics.",
       "tags": [
-        "Data Structures",
-        "Algorithms",
-        "Databases",
-        "System Design"
+        "Data Science",
+        "Machine Learning",
+        "CNN",
+        "Python",
+        "SQL"
       ]
     }
   ]

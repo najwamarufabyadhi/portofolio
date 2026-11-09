@@ -31,9 +31,20 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://najwamaruf.vercel.app"),
-  title: "Muhammad Najwa Maruf Abyadhi — Developer Portfolio Hub 2025",
-  description: "Full-Stack Software Engineer Portfolio Hub. Live interactive Vercel demos, high-performance web systems, and clean code repositories.",
-  keywords: ["Software Engineer", "Full-Stack Developer", "Next.js", "React", "TypeScript", "Vercel", "Muhammad Najwa Maruf Abyadhi"],
+  title: "Muhammad Najwa Maruf Abyadhi — Software Engineer // AI & Data Science",
+  description: "Software Engineer // AI & Data Science Portfolio Hub. Interactive Vercel web systems, deep learning CNN models, and data analytics dashboards.",
+  keywords: [
+    "Software Engineer",
+    "AI & Data Science",
+    "Machine Learning",
+    "CNN",
+    "Next.js",
+    "React",
+    "Python",
+    "TypeScript",
+    "Vercel",
+    "Muhammad Najwa Maruf Abyadhi",
+  ],
   authors: [{ name: "Muhammad Najwa Maruf Abyadhi" }],
   openGraph: {
     title: "Muhammad Najwa Maruf Abyadhi — Developer Portfolio Hub",

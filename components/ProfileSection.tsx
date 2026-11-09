@@ -87,24 +87,24 @@ export const ProfileSection: React.FC = () => {
               {/* Glossy App Tiles Grid */}
               <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 sm:gap-4">
                 {[
+                  ...(profileData.techStack.dataAi || []).slice(0, 4),
                   ...profileData.techStack.frontend.slice(0, 3),
                   ...profileData.techStack.backend.slice(0, 3),
-                  ...profileData.techStack.database.slice(0, 3),
-                  ...profileData.techStack.devops.slice(0, 3),
+                  ...profileData.techStack.devops.slice(0, 2),
                 ].map((skill, idx) => {
                   const colors = [
+                    "from-amber-500/30 to-orange-700/30 text-amber-300",
                     "from-cyan-500/30 to-blue-600/30 text-cyan-400",
-                    "from-zinc-500/30 to-black/50 text-white",
+                    "from-emerald-600/30 to-teal-800/30 text-emerald-300",
+                    "from-purple-600/30 to-pink-800/30 text-purple-300",
                     "from-blue-600/30 to-indigo-700/30 text-blue-400",
+                    "from-zinc-500/30 to-black/50 text-white",
                     "from-teal-500/30 to-cyan-700/30 text-teal-400",
                     "from-emerald-600/30 to-green-800/30 text-emerald-400",
-                    "from-zinc-400/30 to-stone-900/50 text-white",
                     "from-sky-700/30 to-blue-900/30 text-sky-300",
-                    "from-emerald-500/30 to-teal-800/30 text-emerald-300",
-                    "from-purple-600/30 to-pink-800/30 text-purple-300",
+                    "from-zinc-400/30 to-stone-900/50 text-white",
+                    "from-blue-500/30 to-sky-800/30 text-blue-300",
                     "from-orange-600/30 to-red-800/30 text-orange-400",
-                    "from-red-600/30 to-rose-900/30 text-rose-400",
-                    "from-amber-600/30 to-yellow-800/30 text-amber-300",
                   ];
                   const colorClass = colors[idx % colors.length];
                   const abbr = skill.name.length <= 3 ? skill.name : skill.name.slice(0, 2);
@@ -176,7 +176,7 @@ export const ProfileSection: React.FC = () => {
                   <div className="space-y-2">
                     <div>
                       <div className="flex justify-between text-[11px] font-mono text-text-main mb-0.5">
-                        <span>FRONTEND / REACT</span>
+                        <span>SOFTWARE ENG (NEXT.JS)</span>
                         <span>95%</span>
                       </div>
                       <div className="w-full bg-obsidian-deep rounded-full h-1.5 border border-obsidian-border overflow-hidden">
@@ -185,20 +185,20 @@ export const ProfileSection: React.FC = () => {
                     </div>
                     <div>
                       <div className="flex justify-between text-[11px] font-mono text-text-main mb-0.5">
-                        <span>BACKEND / API</span>
-                        <span>90%</span>
+                        <span>DATA SCIENCE &amp; SQL</span>
+                        <span>92%</span>
                       </div>
                       <div className="w-full bg-obsidian-deep rounded-full h-1.5 border border-obsidian-border overflow-hidden">
-                        <div className="bg-gradient-to-r from-blue-400 to-indigo-500 h-full w-[90%]" />
+                        <div className="bg-gradient-to-r from-amber-400 to-orange-500 h-full w-[92%]" />
                       </div>
                     </div>
                     <div>
                       <div className="flex justify-between text-[11px] font-mono text-text-main mb-0.5">
-                        <span>DEVOPS / VERCEL</span>
-                        <span>92%</span>
+                        <span>DEEP LEARNING // CNN</span>
+                        <span>88%</span>
                       </div>
                       <div className="w-full bg-obsidian-deep rounded-full h-1.5 border border-obsidian-border overflow-hidden">
-                        <div className="bg-gradient-to-r from-emerald-400 to-teal-500 h-full w-[92%]" />
+                        <div className="bg-gradient-to-r from-emerald-400 to-teal-500 h-full w-[88%]" />
                       </div>
                     </div>
                   </div>
