@@ -36,17 +36,17 @@ export const ContactOutro: React.FC = () => {
             <div className="relative w-40 h-40 sm:w-48 sm:h-48 mb-6 group">
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-ice-glow to-abyssal blur-xl opacity-60 group-hover:opacity-90 transition-opacity" />
               
-              <div className="relative w-full h-full rounded-full border-2 border-ice/60 p-1.5 bg-obsidian-deep shadow-arcade-glow overflow-hidden flex items-center justify-center">
+              <div className="relative w-full h-full rounded-full border-2 border-ice/60 p-1 bg-obsidian-deep shadow-arcade-glow overflow-hidden flex items-center justify-center">
                 <Image
-                  src="/assets/images/portrait-placeholder.svg"
-                  alt="Muhammad Najwa Maruf Abyadhi"
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-cover rounded-full"
+                  src="/assets/images/profile-contact.jpg"
+                  alt={profileData.name}
+                  fill
+                  priority
+                  className="w-full h-full object-cover object-[center_20%] rounded-full transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
-              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-crimson border border-crimson-light text-[10px] font-mono text-white uppercase tracking-wider">
+              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-3.5 py-0.5 rounded-full bg-crimson border border-crimson-light text-[10px] font-mono text-white uppercase tracking-wider font-bold shadow-md z-10">
                 {profileData.shortName || profileData.name}
               </div>
             </div>
@@ -163,20 +163,28 @@ export const ContactOutro: React.FC = () => {
               </span>
               <div className="flex items-center gap-3">
                 {[
-                  { year: "2023", label: "Foundations", active: false },
-                  { year: "2024", label: "Web Systems", active: false },
-                  { year: "2025", label: "Federated Hub", active: true },
+                  { year: "2023", label: "Foundations", img: "/assets/images/profile-hero.jpg", active: false },
+                  { year: "2024", label: "Web Systems", img: "/assets/images/profile-standing.jpg", active: false },
+                  { year: "2025", label: "Federated Hub", img: "/assets/images/profile-contact.jpg", active: true },
                 ].map((item) => (
                   <div
                     key={item.year}
-                    className={`flex-1 p-2 rounded-lg border text-center font-mono text-xs transition-all ${
+                    className={`flex-1 p-2 rounded-xl border text-center font-mono text-xs transition-all overflow-hidden flex flex-col items-center ${
                       item.active
-                        ? "bg-abyssal-deep border-ice/50 text-ice font-bold"
-                        : "bg-obsidian-deep/50 border-obsidian-border text-text-dim opacity-70"
+                        ? "bg-abyssal-deep border-ice/50 text-ice font-bold shadow-arcade-glow"
+                        : "bg-obsidian-deep/50 border-obsidian-border text-text-dim opacity-75 hover:opacity-100"
                     }`}
                   >
+                    <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden mb-1.5 border border-white/10 bg-obsidian-deep">
+                      <Image
+                        src={item.img}
+                        alt={item.year}
+                        fill
+                        className="object-cover object-top"
+                      />
+                    </div>
                     <div>{item.year}</div>
-                    <div className="text-[9px] font-sans truncate">{item.label}</div>
+                    <div className="text-[9px] font-sans truncate w-full">{item.label}</div>
                   </div>
                 ))}
               </div>

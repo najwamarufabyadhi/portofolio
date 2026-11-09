@@ -31,19 +31,22 @@ export const ProfileSection: React.FC = () => {
             {/* Portrait with Glowing Halo */}
             <div className="relative w-64 h-80 sm:w-72 sm:h-96 my-2 group">
               {/* Radial Blue Rim Lighting */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-abyssal via-ice-glow/30 to-transparent blur-3xl opacity-75 group-hover:opacity-90 transition-opacity" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-abyssal via-ice-glow/30 to-transparent blur-3xl opacity-75 group-hover:opacity-90 transition-opacity" />
               
-              <div className="relative w-full h-full rounded-2xl overflow-hidden border border-abyssal/40 bg-obsidian/40 backdrop-blur-sm flex items-end justify-center shadow-blue-halo">
+              <div className="relative w-full h-full rounded-2xl overflow-hidden border border-abyssal/50 bg-obsidian-deep/80 backdrop-blur-sm flex items-end justify-center shadow-blue-halo">
                 <Image
-                  src="/assets/images/portrait-placeholder.svg"
+                  src="/assets/images/profile-standing.jpg"
                   alt={profileData.name}
-                  width={340}
-                  height={420}
-                  className="w-full h-full object-contain object-bottom drop-shadow-[0_20px_20px_rgba(0,0,0,0.8)]"
+                  fill
+                  priority
+                  className="w-full h-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
                 />
 
-                {/* Subtle Floating Embers effect */}
-                <div className="absolute top-4 right-4 px-2 py-1 rounded bg-obsidian-deep/80 border border-ice/20 text-[10px] font-mono text-ice">
+                {/* Subtle dark vignette overlay to blend edges with cyber background */}
+                <div className="absolute inset-0 bg-gradient-to-t from-obsidian-deep via-transparent to-black/30 pointer-events-none" />
+
+                {/* Subtle Floating Status effect */}
+                <div className="absolute top-4 right-4 px-2.5 py-1 rounded bg-obsidian-deep/90 border border-ice/30 text-[10px] font-mono text-ice z-10 shadow-md">
                   SYSTEM READY
                 </div>
               </div>

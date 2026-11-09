@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "lenis/dist/lenis.css";
-
 :root {
   --bg-dark: #060b11;
   --bg-card: rgba(15, 39, 68, 0.25);

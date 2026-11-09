@@ -58,25 +58,24 @@ export const StartScreen: React.FC<StartScreenProps> = ({
           <div className="relative group">
             {/* Crimson Rounded Shape Background */}
             <div className="w-48 h-60 sm:w-56 sm:h-72 md:w-64 md:h-80 bg-crimson rounded-t-[100px] rounded-b-[40px] md:rounded-t-[120px] md:rounded-b-[50px] shadow-crimson-glow overflow-hidden relative border border-crimson-light/40 flex items-end justify-center transition-transform duration-500 group-hover:scale-[1.02]">
-              {/* Subtle inner gradient shadow */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 pointer-events-none" />
+              {/* Subtle inner gradient shadow to blend into dark atmosphere */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10 pointer-events-none" />
               
-              {/* Portrait Silhouette / Photo */}
-              <div className="relative w-full h-[90%] z-0 flex items-end justify-center">
+              {/* User Portrait Photo */}
+              <div className="relative w-full h-full z-0">
                 <Image
-                  src="/assets/images/portrait-placeholder.svg"
-                  alt="Muhammad Najwa Maruf Abyadhi"
-                  width={300}
-                  height={380}
+                  src="/assets/images/profile-hero.jpg"
+                  alt={profileData.name}
+                  fill
                   priority
-                  className="w-full h-full object-contain object-bottom drop-shadow-[0_15px_15px_rgba(0,0,0,0.6)]"
+                  className="w-full h-full object-cover object-top filter contrast-[1.05]"
                 />
               </div>
 
               {/* Status Tag Overlay */}
-              <div className="absolute bottom-3 z-20 px-3 py-1 rounded-full bg-obsidian-deep/80 backdrop-blur-md border border-white/10 text-[10px] font-mono text-text-main flex items-center gap-1.5 shadow-md">
+              <div className="absolute bottom-3 z-20 px-3 py-1 rounded-full bg-obsidian-deep/85 backdrop-blur-md border border-white/15 text-[10px] font-mono text-text-main flex items-center gap-1.5 shadow-md">
                 <span className="w-1.5 h-1.5 rounded-full bg-ice animate-pulse" />
-                <span className="uppercase">{profileData.shortName || profileData.name}</span>
+                <span className="uppercase font-bold tracking-wider">{profileData.shortName || profileData.name}</span>
               </div>
             </div>
 
