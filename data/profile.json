@@ -7,7 +7,7 @@
   "bio": "Bachelor's degree in Computer Science with a specialization in Data Science and Machine Learning. Experience in processing and analyzing data, as well as building deep learning models using CNN and transfer learning. Proficient in Python, SQL, and data visualization to support data-driven decision making. Accustomed to working with large datasets, performing data preprocessing, and comprehensively evaluating model performance.",
   "location": "Indonesia",
   "email": "najwa.maruf.abyadhi@gmail.com",
-  "resumeUrl": "#resume",
+  "resumeUrl": "/assets/docs/resume.pdf",
   "socials": {
     "github": "https://github.com",
     "linkedin": "https://linkedin.com",
@@ -182,8 +182,8 @@
       ]
     },
     {
-      "period": "2022 — 2023",
-      "role": "Computer Science & Software Foundations",
+      "period": "2020 — 2025",
+      "role": "Computer Science",
       "company": "Technical Training & Education",
       "description": "Studied core data structures, algorithms, database management systems, and modern software design patterns.",
       "tags": [

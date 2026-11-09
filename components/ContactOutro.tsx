@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Mail, Github, Linkedin, Copy, Check, MessageSquare, ArrowUpRight } from "lucide-react";
+import { Mail, Github, Linkedin, Copy, Check, MessageSquare, ArrowUpRight, FileText } from "lucide-react";
 import profileData from "@/data/profile.json";
 import { smoothScrollTo } from "./SmoothScroll";
 
@@ -132,6 +132,27 @@ export const ContactOutro: React.FC = () => {
                   </div>
                 </div>
                 <ArrowUpRight className="w-4 h-4 text-text-muted group-hover:text-ice transition-colors" />
+              </a>
+
+              {/* Curriculum Vitae / Resume */}
+              <a
+                href={profileData.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-between p-3 rounded-xl bg-obsidian/80 border border-crimson/50 hover:border-crimson-light transition-all"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-lg bg-crimson-dark flex items-center justify-center text-white">
+                    <FileText className="w-4 h-4" />
+                  </div>
+                  <div className="text-left">
+                    <div className="text-[10px] font-mono text-crimson-light">CURRICULUM VITAE</div>
+                    <div className="text-xs font-mono font-medium text-text-main group-hover:text-white transition-colors">
+                      Resume (PDF) // View &amp; Download
+                    </div>
+                  </div>
+                </div>
+                <ArrowUpRight className="w-4 h-4 text-crimson-light group-hover:text-white transition-colors" />
               </a>
             </div>
 

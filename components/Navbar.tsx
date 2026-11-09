@@ -88,8 +88,18 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
         </div>
       </nav>
 
-      {/* Top Right Quick Actions (Live status indicator) */}
+      {/* Top Right Quick Actions (Resume & Live status indicator) */}
       <div className="pointer-events-auto hidden md:flex items-center gap-3">
+        <a
+          href={profileData.resumeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-crimson-dark/80 hover:bg-crimson border border-crimson-light/50 text-[11px] font-mono text-white transition-all shadow-sm"
+          title="Open Curriculum Vitae (PDF)"
+        >
+          <span>RESUME.PDF ↗</span>
+        </a>
+
         <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-obsidian-deep/80 border border-obsidian-border text-[11px] font-mono text-text-muted">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           <span>VERCEL ONLINE</span>

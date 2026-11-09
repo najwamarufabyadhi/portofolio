@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { X, FileText, Download, CheckCircle2, Terminal, Cpu } from "lucide-react";
+import { X, FileText, Download, CheckCircle2, Terminal, Cpu, ExternalLink } from "lucide-react";
 import profileData from "@/data/profile.json";
 
 interface OptionsModalProps {
@@ -109,14 +109,24 @@ export const OptionsModal: React.FC<OptionsModalProps> = ({ isOpen, onClose }) =
               [ESC] Press Escape to exit
             </span>
 
-            <div className="flex items-center gap-3 w-full sm:w-auto">
+            <div className="flex flex-wrap items-center gap-2.5 w-full sm:w-auto">
               <a
                 href={profileData.resumeUrl}
-                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 sm:flex-none px-4 py-2.5 rounded-xl bg-obsidian-deep border border-obsidian-border hover:border-ice/60 text-text-main font-arcade text-xs font-bold tracking-wider flex items-center justify-center gap-2 transition-all"
+              >
+                <ExternalLink className="w-3.5 h-3.5 text-ice" />
+                <span>VIEW PDF</span>
+              </a>
+
+              <a
+                href={profileData.resumeUrl}
+                download="Curriculum_Vitae_Muhammad_Najwa_Maruf_Abyadhi.pdf"
                 className="flex-1 sm:flex-none px-5 py-2.5 rounded-xl bg-text-main text-obsidian hover:bg-ice font-arcade text-xs font-bold tracking-wider flex items-center justify-center gap-2 transition-all shadow-arcade-glow"
               >
                 <Download className="w-4 h-4" />
-                <span>DOWNLOAD RESUME (PDF)</span>
+                <span>DOWNLOAD RESUME</span>
               </a>
             </div>
           </div>
