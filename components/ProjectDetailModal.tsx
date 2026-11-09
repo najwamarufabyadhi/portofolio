@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { X, ExternalLink, Github, CheckCircle2, ShieldCheck, Zap } from "lucide-react";
-import { Project } from "./ProjectShowcase";
+import { Project, resolveThumbnail } from "./ProjectShowcase";
 
 interface ProjectDetailModalProps {
   project: Project | null;
@@ -63,7 +63,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
           {/* Big Preview Image */}
           <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-obsidian-border bg-obsidian">
             <Image
-              src={project.thumbnail}
+              src={resolveThumbnail(project.thumbnail)}
               alt={project.title}
               width={800}
               height={450}

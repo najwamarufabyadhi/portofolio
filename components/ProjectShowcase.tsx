@@ -20,6 +20,14 @@ export interface Project {
   highlights?: string[];
 }
 
+export const resolveThumbnail = (src?: string): string => {
+  if (!src) return "/assets/images/projects/project-data-analytics.svg";
+  if (src.startsWith("http://") || src.startsWith("https://") || src.startsWith("/")) {
+    return src;
+  }
+  return `/${src}`;
+};
+
 interface ProjectShowcaseProps {
   onSelectProject: (project: Project) => void;
 }
@@ -138,7 +146,7 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
                   {/* Thumbnail Container */}
                   <div className="relative w-full aspect-[16/9] overflow-hidden bg-obsidian-deep/80 border-b border-obsidian-border">
                     <Image
-                      src={project.thumbnail}
+                      src={resolveThumbnail(project.thumbnail)}
                       alt={project.title}
                       width={800}
                       height={450}
