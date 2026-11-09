@@ -10,7 +10,7 @@
   "resumeUrl": "/assets/docs/resume.pdf",
   "socials": {
     "github": "https://github.com",
-    "linkedin": "https://linkedin.com",
+    "linkedin": "https://www.linkedin.com/in/muhammad-najwa-maruf/",
     "email": "mailto:najwa.maruf.abyadhi@gmail.com"
   },
   "stats": [
@@ -211,7 +211,7 @@
       ]
     },
     {
-      "period": "2020 — 2024",
+      "period": "2020 — 2025",
       "role": "Bachelor of Computer Science",
       "company": "University Degree (Data Science & ML)",
       "description": "Specialized in Data Science & Machine Learning. Built deep learning models using CNN and transfer learning, large dataset preprocessing, and SQL analytics.",

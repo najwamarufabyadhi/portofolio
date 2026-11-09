@@ -127,7 +127,10 @@ export const ContactOutro: React.FC = () => {
                   <div className="text-left">
                     <div className="text-[10px] font-mono text-text-dim">PROFESSIONAL NETWORK</div>
                     <div className="text-xs font-mono font-medium text-text-main group-hover:text-ice transition-colors">
-                      linkedin.com/in/najwamaruf
+                      {profileData.socials.linkedin
+                        .replace("https://www.", "")
+                        .replace("https://", "")
+                        .replace(/\/$/, "")}
                     </div>
                   </div>
                 </div>
