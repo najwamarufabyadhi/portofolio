@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { smoothScrollTo } from "./SmoothScroll";
+import profileData from "@/data/profile.json";
 
 interface NavbarProps {
   activeSection: string;
@@ -45,8 +46,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               className="w-full h-full object-contain"
             />
           </div>
-          <span className="font-arcade text-xs text-text-muted group-hover:text-text-main tracking-wider hidden sm:inline-block">
-            NM.DEV
+          <span className="font-arcade text-xs text-text-muted group-hover:text-text-main tracking-wider hidden sm:inline-block uppercase">
+            {profileData.shortName || "NM"}.DEV
           </span>
         </button>
       </div>

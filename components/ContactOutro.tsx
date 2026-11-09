@@ -47,7 +47,7 @@ export const ContactOutro: React.FC = () => {
               </div>
 
               <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-crimson border border-crimson-light text-[10px] font-mono text-white uppercase tracking-wider">
-                NAJWA MARUF
+                {profileData.shortName || profileData.name}
               </div>
             </div>
 

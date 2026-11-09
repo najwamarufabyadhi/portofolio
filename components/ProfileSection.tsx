@@ -84,33 +84,44 @@ export const ProfileSection: React.FC = () => {
               {/* Glossy App Tiles Grid */}
               <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 sm:gap-4">
                 {[
-                  { name: "React", abbr: "Re", color: "from-cyan-500/30 to-blue-600/30", text: "text-cyan-400" },
-                  { name: "Next.js", abbr: "Nx", color: "from-zinc-500/30 to-black/50", text: "text-white" },
-                  { name: "TypeScript", abbr: "TS", color: "from-blue-600/30 to-indigo-700/30", text: "text-blue-400" },
-                  { name: "Tailwind", abbr: "Tw", color: "from-teal-500/30 to-cyan-700/30", text: "text-teal-400" },
-                  { name: "Node.js", abbr: "No", color: "from-emerald-600/30 to-green-800/30", text: "text-emerald-400" },
-                  { name: "Vercel", abbr: "▲", color: "from-zinc-400/30 to-stone-900/50", text: "text-white" },
-                  { name: "PostgreSQL", abbr: "PG", color: "from-sky-700/30 to-blue-900/30", text: "text-sky-300" },
-                  { name: "Supabase", abbr: "Sb", color: "from-emerald-500/30 to-teal-800/30", text: "text-emerald-300" },
-                  { name: "Golang", abbr: "Go", color: "from-cyan-600/30 to-blue-800/30", text: "text-cyan-300" },
-                  { name: "Docker", abbr: "Dk", color: "from-blue-500/30 to-sky-800/30", text: "text-blue-300" },
-                  { name: "Redis", abbr: "Rd", color: "from-red-600/30 to-rose-900/30", text: "text-rose-400" },
-                  { name: "Git", abbr: "Git", color: "from-orange-600/30 to-red-800/30", text: "text-orange-400" },
-                ].map((skill) => (
-                  <div
-                    key={skill.name}
-                    className="group relative flex flex-col items-center justify-center p-3 rounded-xl bg-obsidian-deep/90 border border-obsidian-border hover:border-ice/50 hover:shadow-arcade-glow transition-all duration-200 cursor-pointer"
-                  >
+                  ...profileData.techStack.frontend.slice(0, 3),
+                  ...profileData.techStack.backend.slice(0, 3),
+                  ...profileData.techStack.database.slice(0, 3),
+                  ...profileData.techStack.devops.slice(0, 3),
+                ].map((skill, idx) => {
+                  const colors = [
+                    "from-cyan-500/30 to-blue-600/30 text-cyan-400",
+                    "from-zinc-500/30 to-black/50 text-white",
+                    "from-blue-600/30 to-indigo-700/30 text-blue-400",
+                    "from-teal-500/30 to-cyan-700/30 text-teal-400",
+                    "from-emerald-600/30 to-green-800/30 text-emerald-400",
+                    "from-zinc-400/30 to-stone-900/50 text-white",
+                    "from-sky-700/30 to-blue-900/30 text-sky-300",
+                    "from-emerald-500/30 to-teal-800/30 text-emerald-300",
+                    "from-purple-600/30 to-pink-800/30 text-purple-300",
+                    "from-orange-600/30 to-red-800/30 text-orange-400",
+                    "from-red-600/30 to-rose-900/30 text-rose-400",
+                    "from-amber-600/30 to-yellow-800/30 text-amber-300",
+                  ];
+                  const colorClass = colors[idx % colors.length];
+                  const abbr = skill.name.length <= 3 ? skill.name : skill.name.slice(0, 2);
+
+                  return (
                     <div
-                      className={`w-10 h-10 rounded-lg bg-gradient-to-br ${skill.color} border border-white/10 flex items-center justify-center font-mono font-bold text-sm ${skill.text} shadow-inner group-hover:scale-105 transition-transform`}
+                      key={skill.name}
+                      className="group relative flex flex-col items-center justify-center p-3 rounded-xl bg-obsidian-deep/90 border border-obsidian-border hover:border-ice/50 hover:shadow-arcade-glow transition-all duration-200 cursor-pointer"
                     >
-                      {skill.abbr}
+                      <div
+                        className={`w-10 h-10 rounded-lg bg-gradient-to-br ${colorClass.split(" ")[0]} ${colorClass.split(" ")[1]} border border-white/10 flex items-center justify-center font-mono font-bold text-sm ${colorClass.split(" ")[2]} shadow-inner group-hover:scale-105 transition-transform`}
+                      >
+                        {abbr}
+                      </div>
+                      <span className="mt-2 text-[11px] font-sans text-text-muted group-hover:text-text-main transition-colors text-center truncate w-full">
+                        {skill.name}
+                      </span>
                     </div>
-                    <span className="mt-2 text-[11px] font-sans text-text-muted group-hover:text-text-main transition-colors text-center truncate w-full">
-                      {skill.name}
-                    </span>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
 
@@ -123,9 +134,15 @@ export const ProfileSection: React.FC = () => {
                   <h4 className="font-arcade text-xs font-bold tracking-widest text-text-muted uppercase mb-2">
                     EDUCATION
                   </h4>
-                  <div className="text-xs font-mono text-crimson-light mb-1">● 2021 — 2025</div>
-                  <div className="text-xs font-bold text-text-main">Computer Science / Informatics</div>
-                  <div className="text-[11px] text-text-muted mt-1">Software Engineering &amp; Distributed Systems</div>
+                  <div className="text-xs font-mono text-crimson-light mb-1">
+                    ● {profileData.experiences[profileData.experiences.length - 1]?.period || "2021 — 2025"}
+                  </div>
+                  <div className="text-xs font-bold text-text-main">
+                    {profileData.experiences[profileData.experiences.length - 1]?.role || "Computer Science"}
+                  </div>
+                  <div className="text-[11px] text-text-muted mt-1">
+                    {profileData.experiences[profileData.experiences.length - 1]?.description || "Data Science & Machine Learning"}
+                  </div>
                 </div>
               </div>
 
@@ -135,9 +152,15 @@ export const ProfileSection: React.FC = () => {
                   <h4 className="font-arcade text-xs font-bold tracking-widest text-text-muted uppercase mb-2">
                     KEY METRICS
                   </h4>
-                  <div className="text-xs font-bold text-ice mb-1">100% VERCEL DEPLOYED</div>
-                  <div className="text-xs text-text-main font-semibold">&lt; 1.0s Speed to Interactive</div>
-                  <div className="text-[11px] text-text-muted mt-1">CI/CD Automated Deliveries</div>
+                  <div className="text-xs font-bold text-ice mb-1">
+                    {profileData.stats[0]?.value} {profileData.stats[0]?.label}
+                  </div>
+                  <div className="text-xs text-text-main font-semibold">
+                    {profileData.stats[1]?.value} {profileData.stats[1]?.label}
+                  </div>
+                  <div className="text-[11px] text-text-muted mt-1">
+                    {profileData.stats[3]?.description || "CI/CD Automated Deliveries"}
+                  </div>
                 </div>
               </div>
 

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { ChevronRight, ExternalLink, SlidersHorizontal, Play } from "lucide-react";
+import profileData from "@/data/profile.json";
 
 interface StartScreenProps {
   onStartClick: () => void;
@@ -16,7 +17,7 @@ export const StartScreen: React.FC<StartScreenProps> = ({
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
 
   const handleExitClick = () => {
-    window.open("https://github.com/najwamaruf", "_blank", "noopener,noreferrer");
+    window.open(profileData.socials.github, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -75,7 +76,7 @@ export const StartScreen: React.FC<StartScreenProps> = ({
               {/* Status Tag Overlay */}
               <div className="absolute bottom-3 z-20 px-3 py-1 rounded-full bg-obsidian-deep/80 backdrop-blur-md border border-white/10 text-[10px] font-mono text-text-main flex items-center gap-1.5 shadow-md">
                 <span className="w-1.5 h-1.5 rounded-full bg-ice animate-pulse" />
-                <span>NAJWA MARUF</span>
+                <span className="uppercase">{profileData.shortName || profileData.name}</span>
               </div>
             </div>
 
@@ -97,11 +98,11 @@ export const StartScreen: React.FC<StartScreenProps> = ({
             {/* Sub-bar / Professional Role Tag */}
             <div className="mt-4 sm:mt-6 flex items-center gap-2 px-3 py-1.5 rounded-md bg-obsidian-deep/90 border border-obsidian-border text-xs sm:text-sm font-arcade tracking-widest text-text-main uppercase">
               <span className="text-white">■</span>
-              <span>FULL STACK SOFTWARE ENGINEER</span>
+              <span>{profileData.title}</span>
             </div>
 
             <p className="mt-3 text-text-muted text-xs sm:text-sm max-w-md font-sans">
-              Single source of truth for high-performance web systems, independent Vercel deployments, and production repositories.
+              {profileData.tagline}
             </p>
           </div>
         </div>
