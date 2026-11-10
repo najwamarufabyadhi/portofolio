@@ -1,6 +1,78 @@
 [
   {
     "id": "project-01",
+    "title": "Autism and Non-Autism Classification",
+    "slug": "autism-classification-deep-learning",
+    "category": "AI & Data",
+    "badge": "Deep Learning / CNN",
+    "description": "Pengembangan model deep learning berbasis arsitektur EfficientNet-B3 untuk mengklasifikasi citra ke dalam kategori Autism dan Non-Autism. Menerapkan image preprocessing, exploratory data analysis (EDA), dan transfer learning dengan akurasi evaluasi 92%.",
+    "thumbnail": "/assets/images/projects/project-autism-classification.svg",
+    "technologies": ["Python", "PyTorch", "EfficientNet-B3", "CNN", "Transfer Learning", "OpenCV"],
+    "liveUrl": "https://github.com/muhammadnajwa007",
+    "repoUrl": "https://github.com/muhammadnajwa007",
+    "featured": true,
+    "highlights": [
+      "Mengembangkan model klasifikasi citra berbasis EfficientNet-B3 dengan akurasi 92% pada evaluasi model",
+      "Melakukan image preprocessing dan exploratory data analysis (EDA) untuk menganalisis karakteristik dataset",
+      "Menerapkan transfer learning untuk ekstraksi fitur citra yang kokoh dan klasifikasi tergeneralisasi"
+    ]
+  },
+  {
+    "id": "project-02",
+    "title": "Cyberbullying Sentiment Analysis Engine",
+    "slug": "cyberbullying-sentiment-analysis",
+    "category": "AI & Data",
+    "badge": "NLP / LSTM",
+    "description": "Sistem deteksi dan klasifikasi ujaran kebencian serta teks cyberbullying menggunakan model deep learning Long Short-Term Memory (LSTM) dengan pipeline Natural Language Processing (NLP) lengkap dan akurasi evaluasi 93%.",
+    "thumbnail": "/assets/images/projects/project-cyberbullying-lstm.svg",
+    "technologies": ["Python", "LSTM", "NLP", "PyTorch", "Scikit-Learn", "Pandas"],
+    "liveUrl": "https://github.com/muhammadnajwa007",
+    "repoUrl": "https://github.com/muhammadnajwa007",
+    "featured": true,
+    "highlights": [
+      "Melatih arsitektur neural network Long Short-Term Memory (LSTM) dengan pencapaian akurasi 93%",
+      "Membangun pipeline text preprocessing, data cleaning, dan tokenisasi untuk mempersiapkan data teks model",
+      "Menerapkan teknik Natural Language Processing (NLP) modern untuk klasifikasi teks berakurasi tinggi"
+    ]
+  },
+  {
+    "id": "project-03",
+    "title": "Web Attendance System & Access Control",
+    "slug": "web-attendance-system",
+    "category": "Full Stack",
+    "badge": "Personal Project 2026",
+    "description": "Sistem manajemen absensi karyawan berbasis web dengan sistem keamanan otentikasi ketat, role-based access control (admin & karyawan), pencatatan kehadiran presisi dengan timestamp, dan skema database relasional MySQL.",
+    "thumbnail": "/assets/images/projects/project-web-attendance.svg",
+    "technologies": ["Next.js", "React", "MySQL", "Tailwind CSS", "REST API", "Node.js"],
+    "liveUrl": "https://github.com/muhammadnajwa007",
+    "repoUrl": "https://github.com/muhammadnajwa007",
+    "featured": true,
+    "highlights": [
+      "Membangun sistem absensi web aman dengan otentikasi dan kontrol akses berbasis peran (admin & employee)",
+      "Mengembangkan fitur pelacakan kehadiran real-time check-in/check-out dengan perekaman timestamp akurat",
+      "Merancang skema database relasional ternormalisasi menggunakan MySQL dan manajemen hak akses pengguna"
+    ]
+  },
+  {
+    "id": "project-04",
+    "title": "E-Commerce Review Sentiment Classifier",
+    "slug": "ecommerce-review-sentiment-svm",
+    "category": "AI & Data",
+    "badge": "Machine Learning",
+    "description": "Model machine learning untuk mengklasifikasi sentimen ulasan pelanggan e-commerce menggunakan Support Vector Machine (SVM) dan pembobotan fitur TF-IDF untuk menghasilkan wawasan kepuasan produk berakurasi 86%.",
+    "thumbnail": "/assets/images/projects/project-ecommerce-sentiment.svg",
+    "technologies": ["Python", "Scikit-Learn", "SVM", "TF-IDF", "NLP", "Pandas"],
+    "liveUrl": "https://github.com/muhammadnajwa007",
+    "repoUrl": "https://github.com/muhammadnajwa007",
+    "featured": true,
+    "highlights": [
+      "Menerapkan TF-IDF (Term Frequency-Inverse Document Frequency) untuk ekstraksi fitur numerik dari teks ulasan",
+      "Melatih classifier Support Vector Machine (SVM) dengan pencapaian akurasi 86% pada evaluasi data uji",
+      "Menganalisis pola umpan balik pelanggan untuk memahami preferensi serta opini konsumen terhadap produk"
+    ]
+  },
+  {
+    "id": "project-05",
     "title": "Customer Behavior & Machine Learning Analytics",
     "slug": "customer-analytics-ml",
     "category": "AI & Data",
@@ -8,85 +80,13 @@
     "description": "Analisis prediktif dan segmentasi perilaku pelanggan terhadap 100.000+ data transaksi. Mengintegrasikan pembersihan data otomatis, analisis RFM, model klasifikasi CNN, dan dashboard KPI interaktif.",
     "thumbnail": "/assets/images/projects/project-data-analytics.svg",
     "technologies": ["Python", "SQL", "Pandas", "Scikit-Learn", "CNN / PyTorch", "Streamlit"],
-    "liveUrl": "https://customer-analytics-demo.vercel.app",
-    "repoUrl": "https://github.com/najwamaruf/customer-analytics-ml",
-    "featured": true,
+    "liveUrl": "https://github.com/muhammadnajwa007",
+    "repoUrl": "https://github.com/muhammadnajwa007",
+    "featured": false,
     "highlights": [
       "Data preprocessing & feature engineering pipeline handling 100k+ transaction records",
       "Trained deep learning CNN & transfer learning model achieving 96.84% accuracy",
       "Interactive data visualization delivering actionable customer retention insights"
-    ]
-  },
-  {
-    "id": "project-02",
-    "title": "Expense & Budget Tracker",
-    "slug": "expense-tracker",
-    "category": "Full Stack",
-    "badge": "Production",
-    "description": "Aplikasi manajemen anggaran dan pencatatan transaksi harian cerdas dengan visualisasi analitik interaktif, ringkasan arus kas, dan ekspor laporan terperinci.",
-    "thumbnail": "/assets/images/projects/project-1.svg",
-    "technologies": ["React", "TypeScript", "Tailwind CSS", "Supabase", "Chart.js"],
-    "liveUrl": "https://expense-tracker-demo.vercel.app",
-    "repoUrl": "https://github.com/najwamaruf/expense-tracker",
-    "featured": true,
-    "highlights": [
-      "Real-time database updates via Supabase WebSockets",
-      "Interactive data visualizations with Chart.js",
-      "Complete JWT auth flow with role-based policies"
-    ]
-  },
-  {
-    "id": "project-03",
-    "title": "Corporate Hub & Headless CMS",
-    "slug": "company-cms",
-    "category": "Frontend",
-    "badge": "Personal Project",
-    "description": "Website profil korporat interaktif dengan integrasi headless CMS, dynamic content fetching, dan skor audit Google Lighthouse di atas 98 pada semua metrik.",
-    "thumbnail": "/assets/images/projects/project-2.svg",
-    "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "Contentful"],
-    "liveUrl": "https://company-demo.vercel.app",
-    "repoUrl": "https://github.com/najwamaruf/company-cms",
-    "featured": true,
-    "highlights": [
-      "Incremental Static Regeneration (ISR) for instant rendering",
-      "Automated OpenGraph card generation for social sharing",
-      "Lighthouse 100/100 performance score"
-    ]
-  },
-  {
-    "id": "project-04",
-    "title": "Resilient Micro-API Gateway",
-    "slug": "api-gateway",
-    "category": "Backend",
-    "badge": "Open Source",
-    "description": "Layanan API Gateway berlatensi rendah dengan rate-limiting terdistribusi via Redis, validasi skema runtime, serta monitoring endpoint real-time.",
-    "thumbnail": "/assets/images/projects/project-3.svg",
-    "technologies": ["Node.js", "Express", "Redis", "Docker", "PostgreSQL"],
-    "liveUrl": "https://api-gateway-demo.vercel.app",
-    "repoUrl": "https://github.com/najwamaruf/api-gateway",
-    "featured": true,
-    "highlights": [
-      "Token bucket rate limiting with Redis cluster support",
-      "Sub-15ms proxy response time",
-      "Automated Swagger / OpenAPI 3.0 documentation"
-    ]
-  },
-  {
-    "id": "project-05",
-    "title": "Developer Design System & UI Kit",
-    "slug": "ui-kit",
-    "category": "Frontend",
-    "badge": "Utility",
-    "description": "Koleksi komponen UI modern yang dapat diakses (WCAG 2.1 compliant), didukung Tailwind CSS, dengan dukungan tema gelap/terang dan live playground.",
-    "thumbnail": "/assets/images/projects/project-4.svg",
-    "technologies": ["Tailwind CSS", "JavaScript", "HTML5", "Vercel"],
-    "liveUrl": "https://uikit-demo.vercel.app",
-    "repoUrl": "https://github.com/najwamaruf/developer-uikit",
-    "featured": false,
-    "highlights": [
-      "Zero runtime dependencies for maximum execution speed",
-      "Fully responsive and keyboard navigable",
-      "Dark mode first design language"
     ]
   }
 ]

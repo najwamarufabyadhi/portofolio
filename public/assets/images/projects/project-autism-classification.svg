@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgAutism" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060B11" />
+      <stop offset="50%" stop-color="#0a1a2f" />
+      <stop offset="100%" stop-color="#03060a" />
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="glowG" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgAutism)" />
+  <circle cx="650" cy="120" r="160" fill="#38bdf8" opacity="0.08" filter="blur(40px)" />
+  <circle cx="150" cy="350" r="140" fill="#818cf8" opacity="0.08" filter="blur(40px)" />
+
+  <!-- App Window Frame -->
+  <g transform="translate(60, 45)">
+    <rect width="680" height="360" rx="12" fill="#080e18" stroke="#1b3049" stroke-width="1.5" />
+    
+    <!-- Title Bar -->
+    <line x1="0" y1="40" x2="680" y2="40" stroke="#1b3049" stroke-width="1" />
+    <circle cx="24" cy="20" r="5" fill="#ef4444" />
+    <circle cx="40" cy="20" r="5" fill="#f59e0b" />
+    <circle cx="56" cy="20" r="5" fill="#10b981" />
+    <rect x="210" y="11" width="260" height="18" rx="6" fill="#030712" stroke="#1b3049" />
+    <text x="340" y="24" fill="#79c0ff" font-family="monospace" font-size="10" text-anchor="middle">efficientnet-b3-vision.ai</text>
+
+    <!-- Top KPI Badges -->
+    <rect x="25" y="55" width="145" height="65" rx="8" fill="#0c1726" stroke="#1e3a5f" stroke-width="1" />
+    <text x="38" y="74" fill="#8b949e" font-family="sans-serif" font-size="10">EVAL ACCURACY</text>
+    <text x="38" y="102" fill="#34d399" font-family="monospace" font-size="19" font-weight="bold">92.00%</text>
+
+    <rect x="185" y="55" width="145" height="65" rx="8" fill="#0c1726" stroke="#1e3a5f" stroke-width="1" />
+    <text x="198" y="74" fill="#8b949e" font-family="sans-serif" font-size="10">BACKBONE</text>
+    <text x="198" y="102" fill="#38bdf8" font-family="monospace" font-size="16" font-weight="bold">EfficientNet-B3</text>
+
+    <rect x="345" y="55" width="145" height="65" rx="8" fill="#0c1726" stroke="#1e3a5f" stroke-width="1" />
+    <text x="358" y="74" fill="#8b949e" font-family="sans-serif" font-size="10">METHODOLOGY</text>
+    <text x="358" y="102" fill="#e6edf3" font-family="monospace" font-size="15" font-weight="bold">Transfer Learn</text>
+
+    <rect x="505" y="55" width="150" height="65" rx="8" fill="#0c1726" stroke="#1e3a5f" stroke-width="1" />
+    <text x="518" y="74" fill="#8b949e" font-family="sans-serif" font-size="10">DATASET EDA</text>
+    <text x="518" y="102" fill="#facc15" font-family="monospace" font-size="16" font-weight="bold">Augmented</text>
+
+    <!-- Neural Network & Feature Map Visualizer -->
+    <rect x="25" y="135" width="370" height="200" rx="8" fill="#09121f" stroke="#182c44" stroke-width="1" />
+    <text x="40" y="160" fill="#79c0ff" font-family="monospace" font-size="11" font-weight="bold">DEEP CONVOLUTIONAL FEATURE MAPS</text>
+    
+    <!-- Mini Heatmap / Feature activation tiles -->
+    <g transform="translate(40, 175)">
+      <rect x="0" y="0" width="70" height="65" rx="4" fill="#132338" stroke="#1e3a5f" />
+      <circle cx="35" cy="32" r="18" fill="#38bdf8" opacity="0.6" filter="blur(6px)" />
+      <text x="35" y="77" fill="#8b949e" font-family="monospace" font-size="9" text-anchor="middle">Conv2D_L1</text>
+
+      <rect x="85" y="0" width="70" height="65" rx="4" fill="#132338" stroke="#1e3a5f" />
+      <circle cx="120" cy="32" r="16" fill="#818cf8" opacity="0.7" filter="blur(6px)" />
+      <text x="120" y="77" fill="#8b949e" font-family="monospace" font-size="9" text-anchor="middle">MBConv_L3</text>
+
+      <rect x="170" y="0" width="70" height="65" rx="4" fill="#132338" stroke="#1e3a5f" />
+      <circle cx="205" cy="32" r="14" fill="#c084fc" opacity="0.7" filter="blur(5px)" />
+      <text x="205" y="77" fill="#8b949e" font-family="monospace" font-size="9" text-anchor="middle">MBConv_L6</text>
+
+      <rect x="255" y="0" width="75" height="65" rx="4" fill="#132338" stroke="#1e3a5f" />
+      <circle cx="292" cy="32" r="12" fill="#34d399" opacity="0.8" filter="blur(5px)" />
+      <text x="292" y="77" fill="#8b949e" font-family="monospace" font-size="9" text-anchor="middle">Dense Head</text>
+
+      <!-- Connecting arrows -->
+      <path d="M 72 32 L 83 32 M 157 32 L 168 32 M 242 32 L 253 32" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="2 2" />
+    </g>
+
+    <!-- Loss & Convergence Chart -->
+    <path d="M 45 305 Q 120 280, 200 240 T 360 215" fill="none" stroke="url(#cyanPurple)" stroke-width="2.5" />
+    <text x="360" y="210" fill="#34d399" font-family="monospace" font-size="9" text-anchor="end">Val Loss: 0.18</text>
+
+    <!-- Side Classification Verdict Card -->
+    <rect x="410" y="135" width="245" height="200" rx="8" fill="#09121f" stroke="#182c44" stroke-width="1" />
+    <text x="425" y="160" fill="#79c0ff" font-family="monospace" font-size="11" font-weight="bold">CLASSIFICATION PREDICTION</text>
+
+    <g transform="translate(425, 175)">
+      <rect x="0" y="0" width="215" height="48" rx="6" fill="#112238" stroke="#1f426d" />
+      <text x="12" y="20" fill="#8b949e" font-family="sans-serif" font-size="10">Autism Spectrum</text>
+      <text x="12" y="38" fill="#34d399" font-family="monospace" font-size="14" font-weight="bold">CONFIDENCE: 92.4%</text>
+
+      <rect x="0" y="60" width="215" height="48" rx="6" fill="#0d1827" stroke="#172b42" />
+      <text x="12" y="80" fill="#8b949e" font-family="sans-serif" font-size="10">Non-Autism Baseline</text>
+      <text x="12" y="98" fill="#64748b" font-family="monospace" font-size="14" font-weight="bold">CONFIDENCE: 7.6%</text>
+
+      <text x="0" y="135" fill="#38bdf8" font-family="monospace" font-size="10">● Model: EfficientNet-B3 (PyTorch)</text>
+      <text x="0" y="149" fill="#94a3b8" font-family="sans-serif" font-size="9">Evaluated on cross-validated test set</text>
+    </g>
+  </g>
+</svg>

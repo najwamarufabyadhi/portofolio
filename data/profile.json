@@ -1,15 +1,15 @@
 {
-  "name": "Muhammad Najwa Maruf Abyadhi",
+  "name": "Muhammad Najwa Ma'ruf Abyadhi",
   "shortName": "Awa",
   "title": "Software Engineer // AI & Data Science",
   "badge": "Available for High-Impact Roles & Projects",
   "tagline": "Architecting high-performance web systems and engineering intelligent, data-driven machine learning solutions.",
-  "bio": "Bachelor's degree in Computer Science with a specialization in Data Science and Machine Learning. Experience in processing and analyzing data, as well as building deep learning models using CNN and transfer learning. Proficient in Python, SQL, and data visualization to support data-driven decision making. Accustomed to working with large datasets, performing data preprocessing, and comprehensively evaluating model performance.",
-  "location": "Indonesia",
+  "bio": "Bachelor of Informatics graduate from University of Muhammadiyah Malang (GPA 3.55/4.00) specializing in Data Science and Machine Learning. Experienced in building deep learning models using CNN, Transfer Learning (EfficientNet-B3), and NLP (LSTM), as well as developing secure full-stack web applications. Proficient in Python, SQL, Next.js, and data visualization for predictive intelligence and automated systems.",
+  "location": "Malang, Indonesia",
   "email": "najwa.maruf.abyadhi@gmail.com",
   "resumeUrl": "/assets/docs/resume.pdf",
   "socials": {
-    "github": "https://github.com",
+    "github": "https://github.com/muhammadnajwa007",
     "linkedin": "https://www.linkedin.com/in/muhammad-najwa-maruf/",
     "email": "mailto:najwa.maruf.abyadhi@gmail.com"
   },
@@ -212,13 +212,13 @@
     },
     {
       "period": "2020 — 2025",
-      "role": "Bachelor of Computer Science",
-      "company": "University Degree (Data Science & ML)",
-      "description": "Specialized in Data Science & Machine Learning. Built deep learning models using CNN and transfer learning, large dataset preprocessing, and SQL analytics.",
+      "role": "Bachelor of Informatics (GPA 3.55 / 4.00)",
+      "company": "University of Muhammadiyah Malang",
+      "description": "Specialized in Data Science & Machine Learning. Built deep learning models using EfficientNet-B3 (CNN), LSTM for NLP sentiment analysis, SVM with TF-IDF, and MySQL relational systems.",
       "tags": [
         "Data Science",
         "Machine Learning",
-        "CNN",
+        "CNN & Transfer Learning",
         "Python",
         "SQL"
       ]
