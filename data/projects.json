@@ -1,5 +1,23 @@
 [
   {
+    "id": "project-fintrack-pro",
+    "title": "FinTrack Pro — Enterprise Financial Engine",
+    "slug": "fintrack-pro-finance-engine",
+    "category": "Full Stack",
+    "badge": "Next.js 15 & Supabase",
+    "description": "Platform analitik finansial dan pelacak arus kas multi-rekening modern berbasis mobile-first. Dilengkapi floating pill dock dengan center FAB, arsitektur immutable ledger dengan soft delete & restore, proteksi multi-tenant Supabase Row-Level Security (RLS), agregasi SQL views berkinerja tinggi, visualisasi Recharts, serta ekspor mutasi ke Excel (.xlsx) dan CSV.",
+    "thumbnail": "/assets/images/projects/project-fintrack-pro.svg",
+    "technologies": ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS v4", "Supabase", "PostgreSQL", "Recharts", "Zod", "Framer Motion"],
+    "liveUrl": "https://github.com/najwamarufabyadhi/Fintrack-pro",
+    "repoUrl": "https://github.com/najwamarufabyadhi/Fintrack-pro",
+    "featured": true,
+    "highlights": [
+      "Dibangun di atas Next.js 15 App Router dan React 19 dengan Server Actions serta optimasi rendering instan",
+      "Keamanan multi-tenant ketat memanfaatkan Supabase Row-Level Security (RLS) dan agregasi performa tinggi via PostgreSQL SQL Views",
+      "Pola immutable ledger dengan mekanisme soft delete & restore, klasifikasi transfer saldo antar-rekening, dan ekspor data siap audit (Excel/CSV)"
+    ]
+  },
+  {
     "id": "project-01",
     "title": "Autism and Non-Autism Classification",
     "slug": "autism-classification-deep-learning",

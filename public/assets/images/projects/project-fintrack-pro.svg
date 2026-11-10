@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgFin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="50%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#04060c" />
+    </linearGradient>
+    <linearGradient id="indigoFab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="barEmerald" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="barRose" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#be123c" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" fill="url(#bgFin)" />
+  <circle cx="680" cy="110" r="160" fill="#6366f1" opacity="0.1" filter="blur(45px)" />
+  <circle cx="120" cy="350" r="150" fill="#10b981" opacity="0.08" filter="blur(40px)" />
+
+  <!-- App Window Shell -->
+  <g transform="translate(60, 40)">
+    <rect width="680" height="370" rx="14" fill="#080e1e" stroke="#1c2c4c" stroke-width="1.5" />
+
+    <!-- Window Topbar -->
+    <line x1="0" y1="38" x2="680" y2="38" stroke="#1c2c4c" stroke-width="1" />
+    <circle cx="24" cy="19" r="5" fill="#ef4444" />
+    <circle cx="40" cy="19" r="5" fill="#f59e0b" />
+    <circle cx="56" cy="19" r="5" fill="#10b981" />
+    <rect x="220" y="10" width="240" height="18" rx="6" fill="#040711" stroke="#1c2c4c" />
+    <text x="340" y="23" fill="#818cf8" font-family="monospace" font-size="10" text-anchor="middle">fintrack-pro.vercel.app</text>
+
+    <!-- Top KPI Row -->
+    <rect x="25" y="50" width="145" height="62" rx="8" fill="#0d172e" stroke="#223661" stroke-width="1" />
+    <text x="38" y="68" fill="#94a3b8" font-family="sans-serif" font-size="9">TOTAL BALANCE</text>
+    <text x="38" y="94" fill="#f8fafc" font-family="monospace" font-size="16" font-weight="bold">Rp 48.250.000</text>
+
+    <rect x="185" y="50" width="145" height="62" rx="8" fill="#0d172e" stroke="#223661" stroke-width="1" />
+    <text x="198" y="68" fill="#34d399" font-family="sans-serif" font-size="9">PEMASUKAN (BLN)</text>
+    <text x="198" y="94" fill="#34d399" font-family="monospace" font-size="15" font-weight="bold">+Rp 15.800.000</text>
+
+    <rect x="345" y="50" width="145" height="62" rx="8" fill="#0d172e" stroke="#223661" stroke-width="1" />
+    <text x="358" y="68" fill="#fb7185" font-family="sans-serif" font-size="9">PENGELUARAN (BLN)</text>
+    <text x="358" y="94" fill="#fb7185" font-family="monospace" font-size="15" font-weight="bold">-Rp 6.450.000</text>
+
+    <rect x="505" y="50" width="150" height="62" rx="8" fill="#0d172e" stroke="#223661" stroke-width="1" />
+    <text x="518" y="68" fill="#94a3b8" font-family="sans-serif" font-size="9">SECURITY LEVEL</text>
+    <text x="518" y="94" fill="#818cf8" font-family="monospace" font-size="14" font-weight="bold">Supabase RLS</text>
+
+    <!-- Cashflow Analytics Chart (Recharts Simulation) -->
+    <rect x="25" y="125" width="370" height="175" rx="8" fill="#091224" stroke="#182747" stroke-width="1" />
+    <text x="40" y="148" fill="#818cf8" font-family="monospace" font-size="10" font-weight="bold">CASHFLOW FLOW &amp; TRENDS (6 MONTHS)</text>
+
+    <g transform="translate(45, 160)">
+      <!-- Oct -->
+      <rect x="10" y="50" width="16" height="50" rx="3" fill="url(#barEmerald)" />
+      <rect x="30" y="70" width="16" height="30" rx="3" fill="url(#barRose)" />
+      <text x="28" y="112" fill="#64748b" font-family="monospace" font-size="8" text-anchor="middle">OCT</text>
+
+      <!-- Nov -->
+      <rect x="70" y="40" width="16" height="60" rx="3" fill="url(#barEmerald)" />
+      <rect x="90" y="65" width="16" height="35" rx="3" fill="url(#barRose)" />
+      <text x="88" y="112" fill="#64748b" font-family="monospace" font-size="8" text-anchor="middle">NOV</text>
+
+      <!-- Dec -->
+      <rect x="130" y="30" width="16" height="70" rx="3" fill="url(#barEmerald)" />
+      <rect x="150" y="55" width="16" height="45" rx="3" fill="url(#barRose)" />
+      <text x="148" y="112" fill="#64748b" font-family="monospace" font-size="8" text-anchor="middle">DEC</text>
+
+      <!-- Jan -->
+      <rect x="190" y="35" width="16" height="65" rx="3" fill="url(#barEmerald)" />
+      <rect x="210" y="60" width="16" height="40" rx="3" fill="url(#barRose)" />
+      <text x="208" y="112" fill="#64748b" font-family="monospace" font-size="8" text-anchor="middle">JAN</text>
+
+      <!-- Feb -->
+      <rect x="250" y="20" width="16" height="80" rx="3" fill="url(#barEmerald)" />
+      <rect x="270" y="65" width="16" height="35" rx="3" fill="url(#barRose)" />
+      <text x="268" y="112" fill="#64748b" font-family="monospace" font-size="8" text-anchor="middle">FEB</text>
+
+      <!-- Legend -->
+      <circle cx="10" cy="125" r="4" fill="#10b981" />
+      <text x="20" y="128" fill="#94a3b8" font-family="sans-serif" font-size="8">Income</text>
+      <circle cx="80" cy="125" r="4" fill="#f43f5e" />
+      <text x="90" y="128" fill="#94a3b8" font-family="sans-serif" font-size="8">Expense</text>
+    </g>
+
+    <!-- Recent Transactions & Multi-Account Card -->
+    <rect x="410" y="125" width="245" height="175" rx="8" fill="#091224" stroke="#182747" stroke-width="1" />
+    <text x="425" y="148" fill="#818cf8" font-family="monospace" font-size="10" font-weight="bold">RECENT TRANSACTIONS (IMMUTABLE)</text>
+
+    <g transform="translate(425, 160)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="215" height="32" rx="5" fill="#101b33" />
+      <circle cx="15" cy="16" r="4" fill="#34d399" />
+      <text x="26" y="16" fill="#f8fafc" font-family="sans-serif" font-size="9">Gaji Klien Proyek</text>
+      <text x="26" y="25" fill="#64748b" font-family="monospace" font-size="7">Rekening BCA</text>
+      <text x="205" y="20" fill="#34d399" font-family="monospace" font-size="9" font-weight="bold" text-anchor="end">+Rp 12.500k</text>
+
+      <!-- Item 2 -->
+      <rect x="0" y="38" width="215" height="32" rx="5" fill="#101b33" />
+      <circle cx="15" cy="54" r="4" fill="#fb7185" />
+      <text x="26" y="54" fill="#f8fafc" font-family="sans-serif" font-size="9">Langganan Server Cloud</text>
+      <text x="26" y="63" fill="#64748b" font-family="monospace" font-size="7">Credit Card</text>
+      <text x="205" y="58" fill="#fb7185" font-family="monospace" font-size="9" font-weight="bold" text-anchor="end">-Rp 450k</text>
+
+      <!-- Item 3 -->
+      <rect x="0" y="76" width="215" height="32" rx="5" fill="#101b33" />
+      <circle cx="15" cy="92" r="4" fill="#38bdf8" />
+      <text x="26" y="92" fill="#f8fafc" font-family="sans-serif" font-size="9">Transfer Saldo Operasional</text>
+      <text x="26" y="101" fill="#64748b" font-family="monospace" font-size="7">BCA → GoPay</text>
+      <text x="205" y="96" fill="#38bdf8" font-family="monospace" font-size="9" font-weight="bold" text-anchor="end">Rp 1.000k</text>
+    </g>
+
+    <!-- Floating Dock Simulation at Bottom -->
+    <g transform="translate(230, 310)">
+      <rect x="0" y="0" width="220" height="40" rx="20" fill="#0d172e" stroke="#2a3f70" stroke-width="1.5" />
+      <!-- Nav items -->
+      <circle cx="35" cy="20" r="4" fill="#818cf8" />
+      <circle cx="75" cy="20" r="4" fill="#64748b" />
+      
+      <!-- Center FAB -->
+      <circle cx="110" cy="20" r="15" fill="url(#indigoFab)" stroke="#818cf8" stroke-width="1.5" />
+      <line x1="110" y1="14" x2="110" y2="26" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+      <line x1="104" y1="20" x2="116" y2="20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+
+      <circle cx="145" cy="20" r="4" fill="#64748b" />
+      <circle cx="185" cy="20" r="4" fill="#64748b" />
+    </g>
+  </g>
+</svg>
