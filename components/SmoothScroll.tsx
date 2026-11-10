@@ -25,14 +25,25 @@ export const smoothScrollTo = (target: string | number, offset = -20) => {
 
 export const SmoothScroll = () => {
   useEffect(() => {
+    // Disable custom touch interception on mobile devices to preserve native 120Hz/60Hz hardware-accelerated momentum
+    const isTouch =
+      typeof window !== "undefined" &&
+      (window.matchMedia("(pointer: coarse)").matches ||
+        "ontouchstart" in window ||
+        navigator.maxTouchPoints > 0);
+
+    if (isTouch) {
+      return;
+    }
+
     const lenis = new Lenis({
-      duration: 1.3,
+      duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
       wheelMultiplier: 1.0,
-      touchMultiplier: 1.5,
+      touchMultiplier: 1.0,
     });
 
     lenisInstance = lenis;

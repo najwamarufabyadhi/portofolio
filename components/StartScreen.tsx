@@ -25,9 +25,9 @@ export const StartScreen: React.FC<StartScreenProps> = ({
       id="start"
       className="relative min-h-screen w-full flex flex-col justify-between items-center px-6 py-10 md:py-16 overflow-hidden bg-deep-space"
     >
-      {/* Background Radial Ambiance */}
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-abyssal/20 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-crimson/15 rounded-full blur-[120px] pointer-events-none" />
+      {/* Background Radial Ambiance (Optimized for Mobile) */}
+      <div className="hidden md:block absolute top-1/4 right-1/4 w-96 h-96 bg-abyssal/20 rounded-full blur-[140px] pointer-events-none" />
+      <div className="hidden md:block absolute bottom-1/4 left-1/4 w-80 h-80 bg-crimson/15 rounded-full blur-[120px] pointer-events-none" />
 
       {/* Top Monogram Bar */}
       <div className="w-full max-w-7xl flex items-center justify-between z-10">

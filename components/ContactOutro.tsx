@@ -20,9 +20,9 @@ export const ContactOutro: React.FC = () => {
       id="contact"
       className="relative min-h-screen w-full flex flex-col justify-between items-center px-6 py-24 md:py-28 overflow-hidden bg-obsidian-deep"
     >
-      {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-abyssal/15 rounded-full blur-[180px] pointer-events-none -z-0" />
-      <div className="absolute bottom-10 right-1/4 w-80 h-80 bg-crimson/15 rounded-full blur-[150px] pointer-events-none -z-0" />
+      {/* Background Glow (Optimized for Mobile) */}
+      <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-abyssal/15 rounded-full blur-[180px] pointer-events-none -z-0" />
+      <div className="hidden md:block absolute bottom-10 right-1/4 w-80 h-80 bg-crimson/15 rounded-full blur-[150px] pointer-events-none -z-0" />
 
       <div className="w-full max-w-6xl mx-auto my-auto z-10">
         

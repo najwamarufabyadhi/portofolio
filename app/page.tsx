@@ -15,28 +15,29 @@ export default function Home() {
   const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  // Monitor scroll position to update active navbar section
+  // Monitor scroll position with high-performance IntersectionObserver (zero layout thrashing on mobile)
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["start", "profil", "project", "contact"];
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
-
-      for (const sectionId of sections) {
-        const el = document.getElementById(sectionId);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          // If the section occupies the upper part of the viewport
-          if (rect.top <= windowHeight * 0.4 && rect.bottom >= windowHeight * 0.2) {
-            setActiveSection(sectionId);
-            break;
+    const sections = ["start", "profil", "project", "contact"];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
           }
-        }
+        });
+      },
+      {
+        rootMargin: "-25% 0px -45% 0px",
+        threshold: 0,
       }
-    };
+    );
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    sections.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   // Keyboard navigation shortcuts

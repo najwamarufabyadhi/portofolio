@@ -10,9 +10,9 @@ export const ProfileSection: React.FC = () => {
       id="profil"
       className="relative min-h-screen w-full flex flex-col justify-center items-center px-6 py-24 md:py-28 overflow-hidden bg-obsidian-deep"
     >
-      {/* Background Ambient Radial Glow */}
-      <div className="absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-abyssal/20 rounded-full blur-[170px] pointer-events-none -z-0" />
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-crimson/10 rounded-full blur-[150px] pointer-events-none -z-0" />
+      {/* Background Ambient Radial Glow (Optimized for Mobile) */}
+      <div className="hidden md:block absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-abyssal/20 rounded-full blur-[170px] pointer-events-none -z-0" />
+      <div className="hidden md:block absolute bottom-10 right-10 w-80 h-80 bg-crimson/10 rounded-full blur-[150px] pointer-events-none -z-0" />
 
       <div className="w-full max-w-6xl mx-auto z-10 space-y-8">
         

@@ -65,7 +65,13 @@ body {
     radial-gradient(circle at 85% 15%, rgba(30, 78, 122, 0.22) 0%, transparent 45%),
     radial-gradient(circle at 15% 85%, rgba(140, 17, 35, 0.18) 0%, transparent 40%),
     radial-gradient(circle at 50% 50%, rgba(15, 39, 68, 0.15) 0%, transparent 60%);
-  background-attachment: fixed;
+  background-attachment: scroll;
+}
+
+@media (min-width: 769px) {
+  .bg-deep-space {
+    background-attachment: fixed;
+  }
 }
 
 /* Glowing Rim Halo for Portrait */
@@ -85,19 +91,34 @@ body {
 
 /* Glassmorphism Capsule Navbar */
 .capsule-nav {
-  background: rgba(6, 11, 17, 0.75);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(6, 11, 17, 0.85);
   border: 1px solid rgba(121, 192, 255, 0.15);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+  transform: translateZ(0);
 }
 
-/* Bento Card Style */
+@media (min-width: 769px) {
+  .capsule-nav {
+    background: rgba(6, 11, 17, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+}
+
+/* Bento Card Style (Optimized for Mobile 120Hz/60Hz Hardware Acceleration) */
 .bento-card {
-  background: linear-gradient(135deg, rgba(15, 39, 68, 0.22) 0%, rgba(6, 11, 17, 0.7) 100%);
+  background: linear-gradient(135deg, rgba(15, 39, 68, 0.35) 0%, rgba(6, 11, 17, 0.9) 100%);
   border: 1px solid rgba(23, 42, 61, 0.8);
-  backdrop-filter: blur(10px);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateZ(0);
+}
+
+@media (min-width: 769px) {
+  .bento-card {
+    background: linear-gradient(135deg, rgba(15, 39, 68, 0.22) 0%, rgba(6, 11, 17, 0.7) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
 }
 .bento-card:hover {
   border-color: rgba(121, 192, 255, 0.4);

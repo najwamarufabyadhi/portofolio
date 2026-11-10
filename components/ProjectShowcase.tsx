@@ -63,9 +63,9 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
       id="project"
       className="relative min-h-screen w-full flex flex-col justify-center items-center px-6 py-24 md:py-28 overflow-hidden bg-obsidian"
     >
-      {/* Background Radial Glow */}
-      <div className="absolute top-1/4 right-10 w-96 h-96 bg-abyssal/15 rounded-full blur-[160px] pointer-events-none -z-0" />
-      <div className="absolute bottom-1/4 left-10 w-96 h-96 bg-crimson/15 rounded-full blur-[140px] pointer-events-none -z-0" />
+      {/* Background Radial Glow (Optimized for Mobile) */}
+      <div className="hidden md:block absolute top-1/4 right-10 w-96 h-96 bg-abyssal/15 rounded-full blur-[160px] pointer-events-none -z-0" />
+      <div className="hidden md:block absolute bottom-1/4 left-10 w-96 h-96 bg-crimson/15 rounded-full blur-[140px] pointer-events-none -z-0" />
 
       <div className="w-full max-w-6xl mx-auto z-10">
         
