@@ -8,7 +8,7 @@
     "description": "Platform analitik finansial dan pelacak arus kas multi-rekening modern berbasis mobile-first. Dilengkapi floating pill dock dengan center FAB, arsitektur immutable ledger dengan soft delete & restore, proteksi multi-tenant Supabase Row-Level Security (RLS), agregasi SQL views berkinerja tinggi, visualisasi Recharts, serta ekspor mutasi ke Excel (.xlsx) dan CSV.",
     "thumbnail": "/assets/images/projects/project-fintrack-pro.svg",
     "technologies": ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS v4", "Supabase", "PostgreSQL", "Recharts", "Zod", "Framer Motion"],
-    "liveUrl": "https://github.com/najwamarufabyadhi/Fintrack-pro",
+    "liveUrl": "http://localhost:3001",
     "repoUrl": "https://github.com/najwamarufabyadhi/Fintrack-pro",
     "featured": true,
     "highlights": [
