@@ -1,5 +1,23 @@
 [
   {
+    "id": "project-rentalhub",
+    "title": "RentalHub — Multi-Vendor Vehicle Rental & Fleet System",
+    "slug": "rentalhub-vehicle-rental-system",
+    "category": "Full Stack",
+    "badge": "Next.js 16 & Supabase",
+    "description": "Platform marketplace persewaan armada kendaraan (mobil & motor) multi-vendor modern. Dilengkapi kalender ketersediaan armada real-time, verifikasi KYC identitas penyewa (KTP & SIM), protokol serah-terima unit (handover checklist) & refund jaminan deposit, direct WhatsApp chat, manajemen armada multi-foto vendor, dan rekapitulasi laporan finansial bulanan siap cetak PDF resmi.",
+    "thumbnail": "/assets/images/projects/project-rentalhub.svg",
+    "technologies": ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL", "Lucide Icons", "Vercel"],
+    "liveUrl": "https://rental-kendaraan-six.vercel.app",
+    "repoUrl": "https://github.com/najwamarufabyadhi/rental-kendaraan",
+    "featured": true,
+    "highlights": [
+      "Arsitektur Multi-Vendor lengkap: portal Customer, Dashboard Vendor armada, integrasi Supabase Storage & Database",
+      "Sistem operasional rental menyeluruh: kalender ketersediaan armada interaktif, verifikasi KYC (KTP/SIM), digital handover checklist serah-terima unit, serta pengembalian deposit",
+      "Fitur vendor pro: manajemen multi-foto armada, order routing direct WhatsApp, dan rekapitulasi performa finansial bulanan dengan modul cetak laporan PDF"
+    ]
+  },
+  {
     "id": "project-fintrack-pro",
     "title": "FinTrack Pro — Enterprise Financial Engine",
     "slug": "fintrack-pro-finance-engine",

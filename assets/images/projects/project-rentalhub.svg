@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgRental" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050B18" />
+      <stop offset="50%" stop-color="#0A1838" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#0F52BA" />
+    </linearGradient>
+    <linearGradient id="coralGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F87171" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    <linearGradient id="emeraldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" fill="url(#bgRental)" />
+  <circle cx="670" cy="100" r="170" fill="#0F52BA" opacity="0.12" />
+  <circle cx="120" cy="350" r="160" fill="#EF4444" opacity="0.08" />
+
+  <!-- App Window Shell -->
+  <g transform="translate(60, 35)">
+    <rect width="680" height="380" rx="16" fill="#0B132B" stroke="#1D2E56" stroke-width="1.5" />
+
+    <!-- Window Topbar -->
+    <line x1="0" y1="40" x2="680" y2="40" stroke="#1D2E56" stroke-width="1" />
+    <circle cx="24" cy="20" r="5" fill="#EF4444" />
+    <circle cx="40" cy="20" r="5" fill="#F59E0B" />
+    <circle cx="56" cy="20" r="5" fill="#10B981" />
+    <rect x="200" y="10" width="280" height="20" rx="6" fill="#060C1B" stroke="#1D2E56" />
+    <text x="340" y="24" fill="#60A5FA" font-family="monospace" font-size="11" text-anchor="middle">rental-kendaraan-six.vercel.app</text>
+
+    <!-- Top Navigation / Brand Row -->
+    <g transform="translate(25, 52)">
+      <!-- Brand Logo Badge -->
+      <rect x="0" y="0" width="130" height="32" rx="8" fill="url(#blueGradient)" />
+      <text x="14" y="21" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold">RentalHub</text>
+      <circle cx="115" cy="16" r="4" fill="#34D399" />
+
+      <!-- Quick Stats Badges -->
+      <g transform="translate(145, 0)">
+        <rect x="0" y="0" width="155" height="32" rx="8" fill="#111E3D" stroke="#22396B" stroke-width="1" />
+        <text x="12" y="20" fill="#93C5FD" font-family="sans-serif" font-size="10" font-weight="600">KYC VERIFIED</text>
+        <circle cx="140" cy="16" r="4" fill="#10B981" />
+      </g>
+
+      <g transform="translate(310, 0)">
+        <rect x="0" y="0" width="170" height="32" rx="8" fill="#111E3D" stroke="#22396B" stroke-width="1" />
+        <text x="12" y="20" fill="#FCA5A5" font-family="sans-serif" font-size="10" font-weight="600">HANDOVER CHECKLIST</text>
+        <circle cx="155" cy="16" r="4" fill="#EF4444" />
+      </g>
+
+      <g transform="translate(490, 0)">
+        <rect x="0" y="0" width="140" height="32" rx="8" fill="#111E3D" stroke="#22396B" stroke-width="1" />
+        <text x="12" y="20" fill="#FCD34D" font-family="sans-serif" font-size="10" font-weight="600">REKAP PDF READY</text>
+        <circle cx="125" cy="16" r="4" fill="#F59E0B" />
+      </g>
+    </g>
+
+    <!-- Main Content Grid -->
+    <!-- Left Column: Vehicle Card & Availability Calendar -->
+    <g transform="translate(25, 96)">
+      <!-- Vehicle Showcase Card -->
+      <rect x="0" y="0" width="370" height="268" rx="12" fill="#0E1A38" stroke="#1E3360" stroke-width="1.2" />
+
+      <!-- Vehicle Card Header -->
+      <rect x="15" y="15" width="340" height="110" rx="10" fill="#070D1F" stroke="#192A50" />
+      
+      <!-- Mini Vehicle Graphic Placeholder -->
+      <path d="M 45 85 L 70 50 L 140 50 L 175 85 Z" fill="#1E3A8A" opacity="0.6" stroke="#3B82F6" stroke-width="1.5" />
+      <circle cx="65" cy="88" r="12" fill="#0B132B" stroke="#60A5FA" stroke-width="2" />
+      <circle cx="155" cy="88" r="12" fill="#0B132B" stroke="#60A5FA" stroke-width="2" />
+      <rect x="80" y="55" width="55" height="22" rx="3" fill="#60A5FA" opacity="0.3" />
+
+      <!-- Vehicle Info Text inside Header -->
+      <text x="195" y="42" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">Honda PCX 160 ABS</text>
+      <text x="195" y="60" fill="#94A3B8" font-family="sans-serif" font-size="10">Vendor: Berkah Jaya Trans</text>
+      <text x="195" y="80" fill="#38BDF8" font-family="monospace" font-size="13" font-weight="bold">Rp 120.000<tspan fill="#64748B" font-size="10">/hari</tspan></text>
+      <rect x="195" y="90" width="85" height="20" rx="5" fill="#10B981" opacity="0.2" />
+      <text x="237" y="104" fill="#34D399" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">SIAP SEWA</text>
+
+      <!-- Calendar Strip Section -->
+      <text x="15" y="145" fill="#93C5FD" font-family="sans-serif" font-size="11" font-weight="bold">KALENDER KETERSEDIAAN ARMADA</text>
+      
+      <!-- Calendar Grid mini simulation -->
+      <g transform="translate(15, 155)">
+        <!-- Day labels -->
+        <text x="18" y="10" fill="#64748B" font-family="monospace" font-size="8" text-anchor="middle">SEN</text>
+        <text x="56" y="10" fill="#64748B" font-family="monospace" font-size="8" text-anchor="middle">SEL</text>
+        <text x="94" y="10" fill="#64748B" font-family="monospace" font-size="8" text-anchor="middle">RAB</text>
+        <text x="132" y="10" fill="#64748B" font-family="monospace" font-size="8" text-anchor="middle">KAM</text>
+        <text x="170" y="10" fill="#64748B" font-family="monospace" font-size="8" text-anchor="middle">JUM</text>
+        <text x="208" y="10" fill="#64748B" font-family="monospace" font-size="8" text-anchor="middle">SAB</text>
+        <text x="246" y="10" fill="#64748B" font-family="monospace" font-size="8" text-anchor="middle">MIN</text>
+
+        <!-- Dates row 1 -->
+        <rect x="5" y="18" width="28" height="24" rx="4" fill="#10B981" opacity="0.15" stroke="#10B981" stroke-width="0.8" />
+        <text x="19" y="34" fill="#34D399" font-family="monospace" font-size="9" text-anchor="middle">16</text>
+
+        <rect x="43" y="18" width="28" height="24" rx="4" fill="#10B981" opacity="0.15" stroke="#10B981" stroke-width="0.8" />
+        <text x="57" y="34" fill="#34D399" font-family="monospace" font-size="9" text-anchor="middle">17</text>
+
+        <rect x="81" y="18" width="28" height="24" rx="4" fill="#EF4444" opacity="0.15" stroke="#EF4444" stroke-width="0.8" />
+        <text x="95" y="34" fill="#F87171" font-family="monospace" font-size="9" text-anchor="middle">18</text>
+
+        <rect x="119" y="18" width="28" height="24" rx="4" fill="#EF4444" opacity="0.15" stroke="#EF4444" stroke-width="0.8" />
+        <text x="133" y="34" fill="#F87171" font-family="monospace" font-size="9" text-anchor="middle">19</text>
+
+        <rect x="157" y="18" width="28" height="24" rx="4" fill="#10B981" opacity="0.15" stroke="#10B981" stroke-width="0.8" />
+        <text x="171" y="34" fill="#34D399" font-family="monospace" font-size="9" text-anchor="middle">20</text>
+
+        <rect x="195" y="18" width="28" height="24" rx="4" fill="#10B981" opacity="0.15" stroke="#10B981" stroke-width="0.8" />
+        <text x="209" y="34" fill="#34D399" font-family="monospace" font-size="9" text-anchor="middle">21</text>
+
+        <rect x="233" y="18" width="28" height="24" rx="4" fill="#10B981" opacity="0.15" stroke="#10B981" stroke-width="0.8" />
+        <text x="247" y="34" fill="#34D399" font-family="monospace" font-size="9" text-anchor="middle">22</text>
+      </g>
+
+      <!-- Calendar Legend -->
+      <g transform="translate(15, 235)">
+        <circle cx="6" cy="6" r="4" fill="#10B981" />
+        <text x="15" y="9" fill="#94A3B8" font-family="sans-serif" font-size="8">Tersedia</text>
+        
+        <circle cx="75" cy="6" r="4" fill="#EF4444" />
+        <text x="84" y="9" fill="#94A3B8" font-family="sans-serif" font-size="8">Tersewa</text>
+
+        <circle cx="140" cy="6" r="4" fill="#F59E0B" />
+        <text x="149" y="9" fill="#94A3B8" font-family="sans-serif" font-size="8">Perawatan</text>
+      </g>
+    </g>
+
+    <!-- Right Column: Vendor Operations & Recap -->
+    <g transform="translate(410, 96)">
+      <!-- Vendor KPI Card -->
+      <rect x="0" y="0" width="245" height="125" rx="12" fill="#0E1A38" stroke="#1E3360" stroke-width="1.2" />
+      <text x="15" y="24" fill="#93C5FD" font-family="sans-serif" font-size="10" font-weight="bold">VENDOR FINANCIAL RECAP</text>
+      
+      <!-- Total Revenue Number -->
+      <text x="15" y="55" fill="#FFFFFF" font-family="monospace" font-size="20" font-weight="bold">Rp 14.850.000</text>
+      <text x="15" y="73" fill="#34D399" font-family="sans-serif" font-size="10">↑ +24% Performa Bulan Ini</text>
+
+      <!-- Mini metrics bar -->
+      <rect x="15" y="85" width="215" height="26" rx="6" fill="#070D1F" />
+      <text x="25" y="102" fill="#94A3B8" font-family="sans-serif" font-size="9">Total Transaksi Selesai:</text>
+      <text x="215" y="102" fill="#60A5FA" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">28 Pesanan</text>
+
+      <!-- Handover Checklist Card -->
+      <g transform="translate(0, 137)">
+        <rect x="0" y="0" width="245" height="131" rx="12" fill="#0E1A38" stroke="#1E3360" stroke-width="1.2" />
+        <text x="15" y="22" fill="#FCA5A5" font-family="sans-serif" font-size="10" font-weight="bold">DIGITAL HANDOVER &amp; KYC</text>
+
+        <!-- Checklist Item 1 -->
+        <rect x="15" y="32" width="215" height="26" rx="6" fill="#070D1F" />
+        <circle cx="28" cy="45" r="5" fill="#10B981" />
+        <text x="42" y="48" fill="#E2E8F0" font-family="sans-serif" font-size="9">2 Identitas Fisik (KTP &amp; SIM)</text>
+        <text x="215" y="48" fill="#34D399" font-family="monospace" font-size="9" text-anchor="end">PASS</text>
+
+        <!-- Checklist Item 2 -->
+        <rect x="15" y="63" width="215" height="26" rx="6" fill="#070D1F" />
+        <circle cx="28" cy="76" r="5" fill="#10B981" />
+        <text x="42" y="79" fill="#E2E8F0" font-family="sans-serif" font-size="9">Cek Fisik &amp; Bensin Unit</text>
+        <text x="215" y="79" fill="#34D399" font-family="monospace" font-size="9" text-anchor="end">PASS</text>
+
+        <!-- Checklist Item 3 -->
+        <rect x="15" y="94" width="215" height="26" rx="6" fill="#070D1F" />
+        <circle cx="28" cy="107" r="5" fill="#10B981" />
+        <text x="42" y="110" fill="#E2E8F0" font-family="sans-serif" font-size="9">Jaminan Deposit Refund</text>
+        <text x="215" y="110" fill="#60A5FA" font-family="monospace" font-size="9" text-anchor="end">READY</text>
+      </g>
+    </g>
+  </g>
+</svg>
