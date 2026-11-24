@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgWms" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040711" />
+      <stop offset="50%" stop-color="#091024" />
+      <stop offset="100%" stop-color="#02040A" />
+    </linearGradient>
+    <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#3730A3" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#0891B2" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E" />
+      <stop offset="100%" stop-color="#E11D48" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" fill="url(#bgWms)" />
+  <circle cx="680" cy="90" r="170" fill="#4F46E5" opacity="0.15" />
+  <circle cx="120" cy="360" r="160" fill="#06B6D4" opacity="0.10" />
+
+  <!-- App Window Shell -->
+  <g transform="translate(60, 35)">
+    <rect width="680" height="380" rx="16" fill="#090E1E" stroke="#1E2A4A" stroke-width="1.5" />
+
+    <!-- Window Topbar -->
+    <line x1="0" y1="40" x2="680" y2="40" stroke="#1E2A4A" stroke-width="1" />
+    <circle cx="24" cy="20" r="5" fill="#EF4444" />
+    <circle cx="40" cy="20" r="5" fill="#F59E0B" />
+    <circle cx="56" cy="20" r="5" fill="#10B981" />
+    <rect x="200" y="10" width="280" height="20" rx="6" fill="#040713" stroke="#1E2A4A" />
+    <text x="340" y="24" fill="#818CF8" font-family="monospace" font-size="11" text-anchor="middle">nexstock-wms.vercel.app</text>
+
+    <!-- Top Navigation / Brand Row -->
+    <g transform="translate(25, 52)">
+      <!-- Brand Logo Badge -->
+      <rect x="0" y="0" width="145" height="32" rx="8" fill="url(#indigoGrad)" />
+      <text x="14" y="21" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">📦 NexStock WMS</text>
+      <circle cx="132" cy="16" r="3.5" fill="#34D399" />
+
+      <!-- Feature Pill 1: Multi-Warehouse -->
+      <g transform="translate(160, 0)">
+        <rect x="0" y="0" width="150" height="32" rx="8" fill="#101935" stroke="#233560" stroke-width="1" />
+        <text x="12" y="20" fill="#93C5FD" font-family="sans-serif" font-size="10" font-weight="600">🏢 MULTI-WAREHOUSE</text>
+        <circle cx="135" cy="16" r="3.5" fill="#38BDF8" />
+      </g>
+
+      <!-- Feature Pill 2: FEFO Radar -->
+      <g transform="translate(320, 0)">
+        <rect x="0" y="0" width="145" height="32" rx="8" fill="#101935" stroke="#233560" stroke-width="1" />
+        <text x="12" y="20" fill="#FCA5A5" font-family="sans-serif" font-size="10" font-weight="600">⏱️ FEFO RADAR EXP</text>
+        <circle cx="130" cy="16" r="3.5" fill="#F43F5E" />
+      </g>
+
+      <!-- Feature Pill 3: Auto ROP -->
+      <g transform="translate(475, 0)">
+        <rect x="0" y="0" width="155" height="32" rx="8" fill="#101935" stroke="#233560" stroke-width="1" />
+        <text x="12" y="20" fill="#6EE7B7" font-family="sans-serif" font-size="10" font-weight="600">📈 AUTO ROP & HPP</text>
+        <circle cx="140" cy="16" r="3.5" fill="#10B981" />
+      </g>
+    </g>
+
+    <!-- Main Content Grid -->
+    <!-- Left Panel: Spatial Bin Map & Expiry Radar -->
+    <g transform="translate(25, 96)">
+      <rect x="0" y="0" width="370" height="268" rx="12" fill="#0C142A" stroke="#1C2B52" stroke-width="1.2" />
+
+      <!-- Section Title -->
+      <g transform="translate(16, 16)">
+        <text x="0" y="12" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="bold">Pemetaan Rak 2D & Radar FEFO</text>
+        <text x="0" y="27" fill="#64748B" font-family="sans-serif" font-size="10">Gudang Pusat Jakarta • Lorong A (Packaging)</text>
+      </g>
+
+      <!-- Spatial Bin Grid (4 Racks visual) -->
+      <g transform="translate(16, 52)">
+        <!-- Bin 1 -->
+        <rect x="0" y="0" width="78" height="64" rx="8" fill="#132042" stroke="#263A70" stroke-width="1" />
+        <text x="8" y="18" fill="#94A3B8" font-family="monospace" font-size="9">RAK-A1-01</text>
+        <text x="8" y="38" fill="#F8FAFC" font-family="sans-serif" font-size="13" font-weight="bold">340</text>
+        <text x="35" y="38" fill="#64748B" font-family="sans-serif" font-size="9">box</text>
+        <rect x="8" y="48" width="62" height="4" rx="2" fill="#1E293B" />
+        <rect x="8" y="48" width="52" height="4" rx="2" fill="#10B981" />
+
+        <!-- Bin 2 (Low stock) -->
+        <g transform="translate(86, 0)">
+          <rect x="0" y="0" width="78" height="64" rx="8" fill="#201524" stroke="#5C1D24" stroke-width="1" />
+          <text x="8" y="18" fill="#F87171" font-family="monospace" font-size="9">RAK-A1-02</text>
+          <text x="8" y="38" fill="#F87171" font-family="sans-serif" font-size="13" font-weight="bold">9</text>
+          <text x="22" y="38" fill="#991B1B" font-family="sans-serif" font-size="9">roll</text>
+          <rect x="8" y="48" width="62" height="4" rx="2" fill="#1E293B" />
+          <rect x="8" y="48" width="12" height="4" rx="2" fill="#EF4444" />
+        </g>
+
+        <!-- Bin 3 -->
+        <g transform="translate(172, 0)">
+          <rect x="0" y="0" width="78" height="64" rx="8" fill="#132042" stroke="#263A70" stroke-width="1" />
+          <text x="8" y="18" fill="#94A3B8" font-family="monospace" font-size="9">RAK-B2-01</text>
+          <text x="8" y="38" fill="#F8FAFC" font-family="sans-serif" font-size="13" font-weight="bold">14</text>
+          <text x="28" y="38" fill="#64748B" font-family="sans-serif" font-size="9">unit</text>
+          <rect x="8" y="48" width="62" height="4" rx="2" fill="#1E293B" />
+          <rect x="8" y="48" width="40" height="4" rx="2" fill="#38BDF8" />
+        </g>
+
+        <!-- Bin 4 -->
+        <g transform="translate(258, 0)">
+          <rect x="0" y="0" width="80" height="64" rx="8" fill="#132042" stroke="#263A70" stroke-width="1" />
+          <text x="8" y="18" fill="#94A3B8" font-family="monospace" font-size="9">RAK-C1-01</text>
+          <text x="8" y="38" fill="#F8FAFC" font-family="sans-serif" font-size="13" font-weight="bold">48</text>
+          <text x="28" y="38" fill="#64748B" font-family="sans-serif" font-size="9">roll</text>
+          <rect x="8" y="48" width="64" height="4" rx="2" fill="#1E293B" />
+          <rect x="8" y="48" width="44" height="4" rx="2" fill="#10B981" />
+        </g>
+      </g>
+
+      <!-- FEFO Warning Alert Card -->
+      <g transform="translate(16, 128)">
+        <rect x="0" y="0" width="338" height="60" rx="8" fill="#1C1417" stroke="#682329" stroke-width="1" />
+        <circle cx="20" cy="22" r="8" fill="#EF4444" opacity="0.2" />
+        <text x="16" y="26" fill="#F87171" font-family="sans-serif" font-size="12" font-weight="bold">!</text>
+        <text x="36" y="20" fill="#FECDD3" font-family="sans-serif" font-size="11" font-weight="bold">FEFO Alert: Stretch Film (LOT-2025-F19)</text>
+        <text x="36" y="36" fill="#FDA4AF" font-family="sans-serif" font-size="9.5">Sisa 22 roll kedaluwarsa dalam 18 Hari • Alokasikan prioritas keluar</text>
+        <rect x="250" y="12" width="76" height="22" rx="6" fill="#E11D48" />
+        <text x="288" y="27" fill="#FFFFFF" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">Keluarkan</text>
+      </g>
+
+      <!-- Scan-to-Pack Verified Bar -->
+      <g transform="translate(16, 198)">
+        <rect x="0" y="0" width="338" height="56" rx="8" fill="#0C1B2A" stroke="#1A3B60" stroke-width="1" />
+        <text x="14" y="20" fill="#38BDF8" font-family="monospace" font-size="10">SCAN-TO-PACK HARDWARE WEDGE</text>
+        <text x="14" y="38" fill="#E2E8F0" font-family="sans-serif" font-size="10.5">Barcode: 899123456001 • Terverifikasi (Audio Chime 🔊)</text>
+        <circle cx="316" cy="28" r="10" fill="#10B981" />
+        <text x="312" y="32" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">✓</text>
+      </g>
+    </g>
+
+    <!-- Right Panel: Business Analytics, Valuation & ROP -->
+    <g transform="translate(410, 96)">
+      <!-- KPI Card 1: HPP Valuation -->
+      <rect x="0" y="0" width="245" height="78" rx="10" fill="#0E1A38" stroke="#1E3360" stroke-width="1.2" />
+      <text x="16" y="24" fill="#94A3B8" font-family="sans-serif" font-size="9.5" font-weight="600">VALUASI ASET FISIK (HPP)</text>
+      <text x="16" y="52" fill="#34D399" font-family="monospace" font-size="20" font-weight="bold">Rp 24.850.000</text>
+      <text x="16" y="68" fill="#64748B" font-family="sans-serif" font-size="8.5">Modal aktif terdistribusi 3 gudang</text>
+
+      <!-- KPI Card 2: Auto Reorder Point -->
+      <g transform="translate(0, 88)">
+        <rect x="0" y="0" width="245" height="82" rx="10" fill="#1A1528" stroke="#3D295C" stroke-width="1.2" />
+        <text x="16" y="22" fill="#C084FC" font-family="sans-serif" font-size="9.5" font-weight="600">AUTO RE-ORDER POINT (ROP)</text>
+        <text x="16" y="48" fill="#F87171" font-family="sans-serif" font-size="16" font-weight="bold">2 SKU Kritis</text>
+        <text x="110" y="48" fill="#94A3B8" font-family="sans-serif" font-size="10">• Bubble &amp; Printer</text>
+        <text x="16" y="68" fill="#818CF8" font-family="monospace" font-size="8.5">Lead Time: 5 Hari • ROP = (D × L) + SS</text>
+      </g>
+
+      <!-- Mini Table Preview -->
+      <g transform="translate(0, 180)">
+        <rect x="0" y="0" width="245" height="88" rx="10" fill="#0C142A" stroke="#1C2B52" stroke-width="1.2" />
+        <text x="14" y="20" fill="#94A3B8" font-family="sans-serif" font-size="9" font-weight="600">DAFTAR PENGAWASAN ROP</text>
+        
+        <!-- Row 1 -->
+        <text x="14" y="42" fill="#E2E8F0" font-family="monospace" font-size="9">Bubble Wrap 50m</text>
+        <text x="145" y="42" fill="#F87171" font-family="monospace" font-size="9" font-weight="bold">9 roll</text>
+        <rect x="185" y="32" width="46" height="15" rx="4" fill="#E11D48" />
+        <text x="208" y="43" fill="#FFFFFF" font-family="sans-serif" font-size="7.5" font-weight="bold" text-anchor="middle">Reorder</text>
+
+        <!-- Row 2 -->
+        <text x="14" y="64" fill="#E2E8F0" font-family="monospace" font-size="9">Kardus Double Wall</text>
+        <text x="145" y="64" fill="#34D399" font-family="monospace" font-size="9" font-weight="bold">340 box</text>
+        <rect x="185" y="54" width="46" height="15" rx="4" fill="#065F46" />
+        <text x="208" y="65" fill="#A7F3D0" font-family="sans-serif" font-size="7.5" font-weight="bold" text-anchor="middle">Optimal</text>
+      </g>
+    </g>
+  </g>
+</svg>
