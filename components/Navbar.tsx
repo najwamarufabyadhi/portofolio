@@ -26,7 +26,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-4 px-6 md:px-12 flex items-center justify-between pointer-events-none ${
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 py-3 sm:py-4 px-3 sm:px-6 md:px-8 lg:px-12 flex items-center justify-between pointer-events-none ${
         scrolled ? "opacity-100" : "opacity-90"
       }`}
     >
@@ -54,10 +54,10 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
 
       {/* Floating Capsule Menu Centered */}
       <nav className="pointer-events-auto">
-        <div className="capsule-nav rounded-full px-2 py-1.5 flex items-center gap-1 sm:gap-2 shadow-2xl">
+        <div className="capsule-nav rounded-full p-1 sm:p-1.5 flex items-center gap-1 sm:gap-2 shadow-2xl">
           <button
             onClick={() => scrollTo("profil")}
-            className={`px-4 py-1.5 rounded-full text-xs font-arcade font-bold tracking-wider transition-all duration-300 ${
+            className={`px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-arcade font-bold tracking-wider transition-all duration-300 ${
               activeSection === "profil"
                 ? "bg-text-main text-obsidian shadow-arcade-glow"
                 : "text-text-muted hover:text-text-main hover:bg-obsidian-surface"
@@ -67,7 +67,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           </button>
           <button
             onClick={() => scrollTo("project")}
-            className={`px-4 py-1.5 rounded-full text-xs font-arcade font-bold tracking-wider transition-all duration-300 ${
+            className={`px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-arcade font-bold tracking-wider transition-all duration-300 ${
               activeSection === "project"
                 ? "bg-text-main text-obsidian shadow-arcade-glow"
                 : "text-text-muted hover:text-text-main hover:bg-obsidian-surface"
@@ -77,19 +77,20 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           </button>
           <button
             onClick={() => scrollTo("contact")}
-            className={`px-4 py-1.5 rounded-full text-xs font-arcade font-bold tracking-wider transition-all duration-300 ${
+            className={`px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-arcade font-bold tracking-wider transition-all duration-300 ${
               activeSection === "contact"
                 ? "bg-text-main text-obsidian shadow-arcade-glow"
                 : "text-text-muted hover:text-text-main hover:bg-obsidian-surface"
             }`}
           >
-            CONTACT PERSON
+            <span className="hidden sm:inline">CONTACT PERSON</span>
+            <span className="sm:hidden">CONTACT</span>
           </button>
         </div>
       </nav>
 
       {/* Top Right Quick Actions (Resume & Live status indicator) */}
-      <div className="pointer-events-auto hidden md:flex items-center gap-3">
+      <div className="pointer-events-auto hidden lg:flex items-center gap-2.5 xl:gap-3">
         <a
           href={profileData.resumeUrl}
           target="_blank"

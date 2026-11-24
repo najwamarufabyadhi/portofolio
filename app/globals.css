@@ -15,6 +15,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 html.lenis, html.lenis body {
@@ -41,6 +43,8 @@ body {
   background-color: #060b11;
   color: #e6edf3;
   overflow-x: hidden;
+  max-width: 100vw;
+  position: relative;
 }
 
 /* Custom Scrollbar */

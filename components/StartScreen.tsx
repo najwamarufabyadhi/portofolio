@@ -51,13 +51,13 @@ export const StartScreen: React.FC<StartScreenProps> = ({
       </div>
 
       {/* Main Center Hero Block */}
-      <div className="w-full max-w-5xl my-auto py-8 z-10 flex flex-col items-center">
-        <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14">
+      <div className="w-full max-w-5xl my-auto py-6 sm:py-8 z-10 flex flex-col items-center px-4">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 xl:gap-16">
           
           {/* Left Crimson Capsule Framing Portrait */}
-          <div className="relative group">
+          <div className="relative group shrink-0">
             {/* Crimson Rounded Shape Background */}
-            <div className="w-48 h-60 sm:w-56 sm:h-72 md:w-64 md:h-80 bg-crimson rounded-t-[100px] rounded-b-[40px] md:rounded-t-[120px] md:rounded-b-[50px] shadow-crimson-glow overflow-hidden relative border border-crimson-light/40 flex items-end justify-center transition-transform duration-500 group-hover:scale-[1.02]">
+            <div className="w-44 h-56 sm:w-52 sm:h-64 md:w-56 md:h-72 lg:w-60 lg:h-76 xl:w-64 xl:h-80 bg-crimson rounded-t-[100px] rounded-b-[40px] lg:rounded-t-[120px] lg:rounded-b-[50px] shadow-crimson-glow overflow-hidden relative border border-crimson-light/40 flex items-end justify-center transition-transform duration-500 group-hover:scale-[1.02]">
               {/* Subtle inner gradient shadow to blend into dark atmosphere */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10 pointer-events-none" />
               
@@ -84,23 +84,23 @@ export const StartScreen: React.FC<StartScreenProps> = ({
           </div>
 
           {/* Right Typography: PORTFOLIO 2025 */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="flex flex-wrap items-baseline justify-center md:justify-start gap-3 sm:gap-4">
-              <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight text-text-main uppercase leading-none drop-shadow-2xl">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left min-w-0 max-w-full">
+            <div className="flex flex-wrap items-baseline justify-center lg:justify-start gap-2.5 sm:gap-4 max-w-full">
+              <h1 className="font-display text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold tracking-tight text-text-main uppercase leading-none drop-shadow-2xl break-normal select-none">
                 PORTFOLIO
               </h1>
-              <span className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-text-muted tracking-tight">
+              <span className="font-display text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light text-text-muted tracking-tight select-none">
                 2025
               </span>
             </div>
 
             {/* Sub-bar / Professional Role Tag */}
-            <div className="mt-4 sm:mt-6 flex items-center gap-2 px-3 py-1.5 rounded-md bg-obsidian-deep/90 border border-obsidian-border text-xs sm:text-sm font-arcade tracking-widest text-text-main uppercase">
+            <div className="mt-4 sm:mt-6 flex flex-wrap items-center justify-center lg:justify-start gap-2 px-3 py-1.5 rounded-md bg-obsidian-deep/90 border border-obsidian-border text-xs sm:text-sm font-arcade tracking-widest text-text-main uppercase max-w-full">
               <span className="text-white">■</span>
               <span>{profileData.title}</span>
             </div>
 
-            <p className="mt-3 text-text-muted text-xs sm:text-sm max-w-md font-sans">
+            <p className="mt-3 text-text-muted text-xs sm:text-sm max-w-md lg:max-w-lg font-sans text-center lg:text-left px-2 sm:px-0">
               {profileData.tagline}
             </p>
           </div>
