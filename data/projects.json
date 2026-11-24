@@ -8,8 +8,8 @@
     "description": "Sistem Manajemen Gudang (WMS) multi-cabang skala enterprise dengan kendali spasial rak 2D (Aisle, Rack, Tier), hirarki kemasan bertingkat (Multi-UoM), radar kedaluwarsa berbasis FEFO (First Expired, First Out), scan-to-pack verifikasi audio hardware barcode wedge, transfer antar-gudang, stock opname dua tingkat (two-person approval), buku besar mutasi permanen (immutable audit ledger) dengan valuasi HPP, analitik perputaran barang (velocity), kalkulator Auto Re-Order Point (ROP), dan ekspor Excel CSV.",
     "thumbnail": "/assets/images/projects/project-nexstock-wms.svg",
     "technologies": ["Next.js 14", "React", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL", "PWA", "Web Audio API", "Lucide Icons", "Vercel"],
-    "liveUrl": "https://nexstock-wms.vercel.app",
-    "repoUrl": "https://github.com/najwamarufabyadhi/Inventory-Management-Systtem",
+    "liveUrl": "https://nextstock-wms.vercel.app",
+    "repoUrl": "https://github.com/najwamarufabyadhi/nextstock-wms",
     "featured": true,
     "highlights": [
       "Arsitektur Multi-Warehouse & Spatial Bin Map: pelacakan stok real-time di 3 cabang (Jakarta, Surabaya, Medan) dengan pemetaan rak 2D (Lorong, Rak, Tingkat) dan peringatan kapasitas dinamis",

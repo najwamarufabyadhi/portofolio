@@ -38,7 +38,7 @@
     <circle cx="40" cy="20" r="5" fill="#F59E0B" />
     <circle cx="56" cy="20" r="5" fill="#10B981" />
     <rect x="200" y="10" width="280" height="20" rx="6" fill="#040713" stroke="#1E2A4A" />
-    <text x="340" y="24" fill="#818CF8" font-family="monospace" font-size="11" text-anchor="middle">nexstock-wms.vercel.app</text>
+    <text x="340" y="24" fill="#818CF8" font-family="monospace" font-size="11" text-anchor="middle">nextstock-wms.vercel.app</text>
 
     <!-- Top Navigation / Brand Row -->
     <g transform="translate(25, 52)">
