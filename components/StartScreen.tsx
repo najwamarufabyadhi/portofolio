@@ -51,13 +51,13 @@ export const StartScreen: React.FC<StartScreenProps> = ({
       </div>
 
       {/* Main Center Hero Block */}
-      <div className="w-full max-w-5xl my-auto py-6 sm:py-8 z-10 flex flex-col items-center px-4">
-        <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 xl:gap-16">
+      <div className="w-full max-w-6xl my-auto py-6 sm:py-8 z-10 flex flex-col items-center px-4 sm:px-6">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-10 xl:gap-14">
           
           {/* Left Crimson Capsule Framing Portrait */}
           <div className="relative group shrink-0">
             {/* Crimson Rounded Shape Background */}
-            <div className="w-44 h-56 sm:w-52 sm:h-64 md:w-56 md:h-72 lg:w-60 lg:h-76 xl:w-64 xl:h-80 bg-crimson rounded-t-[100px] rounded-b-[40px] lg:rounded-t-[120px] lg:rounded-b-[50px] shadow-crimson-glow overflow-hidden relative border border-crimson-light/40 flex items-end justify-center transition-transform duration-500 group-hover:scale-[1.02]">
+            <div className="w-44 h-56 sm:w-52 sm:h-64 md:w-56 md:h-72 lg:w-56 lg:h-72 xl:w-64 xl:h-80 bg-crimson rounded-t-[100px] rounded-b-[40px] lg:rounded-t-[120px] lg:rounded-b-[50px] shadow-crimson-glow overflow-hidden relative border border-crimson-light/40 flex items-end justify-center transition-transform duration-500 group-hover:scale-[1.02]">
               {/* Subtle inner gradient shadow to blend into dark atmosphere */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent z-10 pointer-events-none" />
               
@@ -86,10 +86,10 @@ export const StartScreen: React.FC<StartScreenProps> = ({
           {/* Right Typography: PORTFOLIO 2025 */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left min-w-0 max-w-full">
             <div className="flex flex-wrap items-baseline justify-center lg:justify-start gap-2.5 sm:gap-4 max-w-full">
-              <h1 className="font-display text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold tracking-tight text-text-main uppercase leading-none drop-shadow-2xl break-normal select-none">
+              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold tracking-tight text-text-main uppercase leading-none drop-shadow-2xl break-normal select-none">
                 PORTFOLIO
               </h1>
-              <span className="font-display text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light text-text-muted tracking-tight select-none">
+              <span className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-light text-text-muted tracking-tight select-none">
                 2025
               </span>
             </div>
