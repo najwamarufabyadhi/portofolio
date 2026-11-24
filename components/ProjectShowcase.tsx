@@ -80,7 +80,7 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
             </div>
             <div className="flex flex-wrap items-baseline gap-3 sm:gap-4">
               <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-extrabold text-text-main tracking-tight uppercase">
-                RECAP PROJECT 2025
+                PROJECT RECAP
               </h2>
               <span className="font-mono text-[10px] sm:text-xs px-2.5 py-1 rounded bg-abyssal-deep border border-ice/30 text-ice uppercase font-semibold">
                 VERCEL HOSTED
