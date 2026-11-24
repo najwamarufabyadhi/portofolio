@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { X, FileText, Download, CheckCircle2, Terminal, Cpu, ExternalLink } from "lucide-react";
+import { X, Download, CheckCircle2, Terminal, Cpu, ExternalLink } from "lucide-react";
 import profileData from "@/data/profile.json";
 
 interface OptionsModalProps {
@@ -20,7 +20,7 @@ export const OptionsModal: React.FC<OptionsModalProps> = ({ isOpen, onClose }) =
     }
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "";
     };
   }, [isOpen, onClose]);
 
@@ -52,7 +52,7 @@ export const OptionsModal: React.FC<OptionsModalProps> = ({ isOpen, onClose }) =
         </div>
 
         {/* Modal Body */}
-        <div className="space-y-6">
+        <div className="space-y-6" data-lenis-prevent>
           {/* Identity & Core Metrics */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {profileData.stats.map((s) => (

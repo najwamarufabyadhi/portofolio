@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import Image from "next/image";
-import { X, ExternalLink, Github, CheckCircle2, ShieldCheck, Zap } from "lucide-react";
+import { X, ExternalLink, Github, CheckCircle2, Zap } from "lucide-react";
 import { Project, resolveThumbnail } from "./ProjectShowcase";
 
 interface ProjectDetailModalProps {
@@ -24,7 +24,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
     }
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "";
     };
   }, [project, onClose]);
 
@@ -58,16 +58,17 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
           </button>
         </div>
 
-        {/* Scrollable Content */}
-        <div className="p-6 overflow-y-auto space-y-6">
+        {/* Scrollable Content with data-lenis-prevent to avoid smooth scroll conflict */}
+        <div className="p-6 overflow-y-auto space-y-6" data-lenis-prevent>
           {/* Big Preview Image */}
           <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-obsidian-border bg-obsidian">
             <Image
               src={resolveThumbnail(project.thumbnail)}
               alt={project.title}
-              width={800}
-              height={450}
-              className="w-full h-full object-cover"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 800px"
+              className="object-cover"
             />
           </div>
 
@@ -120,7 +121,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
         {/* Modal Footer Actions */}
         <div className="p-5 border-t border-obsidian-border bg-obsidian-surface flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-xs font-mono text-text-dim hidden sm:block">
-            STATUS: 200 LIVE ON VERCEL
+            {project.liveUrl.includes("vercel.app") ? "STATUS: 200 LIVE ON VERCEL" : "STATUS: REPOSITORY ACTIVE"}
           </div>
 
           <div className="flex items-center gap-3 w-full sm:w-auto">
@@ -149,4 +150,3 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
     </div>
   );
 };
-
