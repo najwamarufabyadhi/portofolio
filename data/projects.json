@@ -84,6 +84,35 @@
     ]
   },
   {
+    "id": "project-km-hss",
+    "title": "KM-HSS Malang — Student Organization Portal & Content Management",
+    "slug": "km-hss-malang-organization-portal",
+    "category": "Full Stack",
+    "badge": "Next.js 16 & Supabase",
+    "description": "Platform portal web resmi organisasi mahasiswa Kerukunan Mahasiswa Hulu Sungai Selatan (KM-HSS) wilayah Malang. Mengintegrasikan portal warta berita berbasis hero carousel dan filter kategori kegiatan, direktori hierarki kepengurusan lintas periode aktif/arsip, direktori profil pengurus inti, serta dashboard panel admin terproteksi Supabase Auth Magic Link (OTP) dan Row-Level Security (RLS) whitelist untuk manajemen konten berita, divisi, dan anggota tanpa menyentuh kode.",
+    "thumbnail": "/assets/images/projects/project-km-hss.svg",
+    "technologies": [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Supabase",
+      "PostgreSQL",
+      "Supabase Auth",
+      "Zod",
+      "Lucide Icons",
+      "Vercel"
+    ],
+    "liveUrl": "https://km-hss-malang.vercel.app",
+    "repoUrl": "https://github.com/najwamarufabyadhi/km-hss-malang",
+    "featured": true,
+    "highlights": [
+      "Arsitektur Portal Informasi & News Engine: sistem publikasi warta berita responsif dengan hero carousel terkurasi, klasifikasi kategori dinamis, dan optimasi SEO metadata Open Graph",
+      "Hierarki Multi-Periode & Direktori Pengurus: penataan kepengurusan fleksibel berbasis periode aktif versus arsip historis, pemetaan struktur divisi bertingkat, serta direktori anggota",
+      "Keamanan Tiga Lapis & Otomasi Operasional: autentikasi passwordless Magic Link Supabase Auth, proteksi akses data berbasis email whitelist RLS, dan keep-alive cron job otomatis via Vercel"
+    ]
+  },
+  {
     "id": "project-01",
     "title": "Autism and Non-Autism Classification",
     "slug": "autism-classification-deep-learning",

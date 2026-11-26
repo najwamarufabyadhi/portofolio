@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgHss" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040D14" />
+      <stop offset="50%" stop-color="#081A24" />
+      <stop offset="100%" stop-color="#02080D" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D9488" />
+      <stop offset="100%" stop-color="#0F766E" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" fill="url(#bgHss)" />
+  <circle cx="680" cy="90" r="170" fill="#059669" opacity="0.12" />
+  <circle cx="120" cy="360" r="160" fill="#0284C7" opacity="0.10" />
+
+  <!-- App Window Shell -->
+  <g transform="translate(60, 35)">
+    <rect width="680" height="380" rx="16" fill="#07151E" stroke="#12323D" stroke-width="1.5" />
+
+    <!-- Window Topbar -->
+    <line x1="0" y1="40" x2="680" y2="40" stroke="#12323D" stroke-width="1" />
+    <circle cx="24" cy="20" r="5" fill="#EF4444" />
+    <circle cx="40" cy="20" r="5" fill="#F59E0B" />
+    <circle cx="56" cy="20" r="5" fill="#10B981" />
+    <rect x="200" y="10" width="280" height="20" rx="6" fill="#030C12" stroke="#12323D" />
+    <text x="340" y="24" fill="#34D399" font-family="monospace" font-size="11" text-anchor="middle">km-hss-malang.vercel.app</text>
+
+    <!-- Top Navigation / Brand Row -->
+    <g transform="translate(25, 52)">
+      <!-- Brand Logo Badge -->
+      <rect x="0" y="0" width="150" height="32" rx="8" fill="url(#emeraldGrad)" />
+      <rect x="12" y="9" width="14" height="14" rx="3" fill="#6EE7B7" />
+      <text x="34" y="21" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">KM-HSS Malang</text>
+      <circle cx="137" cy="16" r="3.5" fill="#34D399" />
+
+      <!-- Feature Pill 1: Portal Organisasi -->
+      <g transform="translate(165, 0)">
+        <rect x="0" y="0" width="150" height="32" rx="8" fill="#0A2229" stroke="#13474F" stroke-width="1" />
+        <text x="14" y="20" fill="#6EE7B7" font-family="sans-serif" font-size="10" font-weight="600">PORTAL BERITA &amp; EVENT</text>
+        <circle cx="135" cy="16" r="3.5" fill="#10B981" />
+      </g>
+
+      <!-- Feature Pill 2: Multi-Periode -->
+      <g transform="translate(330, 0)">
+        <rect x="0" y="0" width="155" height="32" rx="8" fill="#0A2229" stroke="#13474F" stroke-width="1" />
+        <text x="14" y="20" fill="#7DD3FC" font-family="sans-serif" font-size="10" font-weight="600">STRUKTUR KEPENGURUSAN</text>
+        <circle cx="140" cy="16" r="3.5" fill="#38BDF8" />
+      </g>
+
+      <!-- Feature Pill 3: Supabase RLS -->
+      <g transform="translate(500, 0)">
+        <rect x="0" y="0" width="130" height="32" rx="8" fill="#0A2229" stroke="#13474F" stroke-width="1" />
+        <text x="14" y="20" fill="#FDE047" font-family="sans-serif" font-size="10" font-weight="600">MAGIC LINK RLS</text>
+        <circle cx="115" cy="16" r="3.5" fill="#FBBF24" />
+      </g>
+    </g>
+
+    <!-- Main Content Grid -->
+    <!-- Left Panel: Hero News Carousel Preview -->
+    <g transform="translate(25, 96)">
+      <rect x="0" y="0" width="370" height="268" rx="12" fill="#051821" stroke="#133845" stroke-width="1.2" />
+
+      <!-- Section Title -->
+      <g transform="translate(16, 16)">
+        <text x="0" y="12" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="bold">Sorotan Kegiatan &amp; Warta Organisasi</text>
+        <text x="0" y="27" fill="#64748B" font-family="sans-serif" font-size="10">Kerukunan Mahasiswa Hulu Sungai Selatan • Wilayah Malang</text>
+      </g>
+
+      <!-- News Carousel Featured Card -->
+      <g transform="translate(16, 44)">
+        <rect x="0" y="0" width="338" height="136" rx="10" fill="#092733" stroke="#174A59" stroke-width="1" />
+        
+        <!-- Category Chip -->
+        <rect x="14" y="14" width="75" height="20" rx="4" fill="#047857" />
+        <text x="51" y="28" fill="#FFFFFF" font-family="sans-serif" font-size="9.5" font-weight="bold" text-anchor="middle">KEGIATAN</text>
+
+        <!-- Post Title -->
+        <text x="14" y="54" fill="#FFFFFF" font-family="sans-serif" font-size="13" font-weight="bold">Wadah Silaturahmi &amp; Kolaborasi Mahasiswa</text>
+        <text x="14" y="72" fill="#94A3B8" font-family="sans-serif" font-size="10.5">Dokumentasi kegiatan kebersamaan, program kerja divisi,</text>
+        <text x="14" y="88" fill="#94A3B8" font-family="sans-serif" font-size="10.5">dan pengumuman agenda berkala mahasiswa rantau HSS.</text>
+
+        <!-- Date & Read Action -->
+        <line x1="14" y1="104" x2="324" y2="104" stroke="#133845" stroke-width="0.8" />
+        <text x="14" y="122" fill="#64748B" font-family="monospace" font-size="9.5">25 NOVEMBER 2026</text>
+        <text x="324" y="122" fill="#34D399" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="end">Baca Selengkapnya &#8594;</text>
+      </g>
+
+      <!-- Bottom Micro Feature Strip -->
+      <g transform="translate(16, 194)">
+        <rect x="0" y="0" width="338" height="60" rx="8" fill="#0A2229" stroke="#13474F" stroke-width="1" />
+        <text x="14" y="20" fill="#38BDF8" font-family="monospace" font-size="10">SUPABASE AUTH &amp; STORAGE ENGINE</text>
+        <text x="14" y="38" fill="#E2E8F0" font-family="sans-serif" font-size="10.5">Passwordless Magic Link OTP • Proteksi Admin RLS</text>
+        <circle cx="316" cy="30" r="10" fill="#10B981" />
+        <text x="312" y="34" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">&#10003;</text>
+      </g>
+    </g>
+
+    <!-- Right Panel: Organization Structure & Member Directory Preview -->
+    <g transform="translate(410, 96)">
+      <rect x="0" y="0" width="245" height="268" rx="12" fill="#051821" stroke="#133845" stroke-width="1.2" />
+
+      <g transform="translate(16, 16)">
+        <text x="0" y="12" fill="#E2E8F0" font-family="sans-serif" font-size="12" font-weight="bold">Struktur Multi-Periode</text>
+        <text x="0" y="27" fill="#64748B" font-family="sans-serif" font-size="10">Hierarki Divisi &amp; Direktori Anggota</text>
+      </g>
+
+      <!-- Active Period Badge -->
+      <g transform="translate(16, 44)">
+        <rect x="0" y="0" width="213" height="32" rx="6" fill="#0A2D38" stroke="#13474F" />
+        <circle cx="16" cy="16" r="4" fill="#10B981" />
+        <text x="28" y="20" fill="#6EE7B7" font-family="monospace" font-size="10.5" font-weight="bold">PERIODE AKTIF: 2026 / 2027</text>
+      </g>
+
+      <!-- Division List -->
+      <g transform="translate(16, 86)">
+        <!-- Div 1 -->
+        <rect x="0" y="0" width="213" height="36" rx="6" fill="#09202A" stroke="#133845" stroke-width="1" />
+        <text x="12" y="16" fill="#E2E8F0" font-family="sans-serif" font-size="10.5" font-weight="bold">Badan Pengurus Inti (BPI)</text>
+        <text x="12" y="29" fill="#94A3B8" font-family="sans-serif" font-size="9.5">Ketua Umum, Sekretaris, Bendahara</text>
+        <circle cx="198" cy="18" r="6" fill="#059669" />
+
+        <!-- Div 2 -->
+        <g transform="translate(0, 42)">
+          <rect x="0" y="0" width="213" height="36" rx="6" fill="#09202A" stroke="#133845" stroke-width="1" />
+          <text x="12" y="16" fill="#E2E8F0" font-family="sans-serif" font-size="10.5" font-weight="bold">Divisi Hubungan Masyarakat</text>
+          <text x="12" y="29" fill="#94A3B8" font-family="sans-serif" font-size="9.5">Kemitraan, Publikasi, &amp; Sosmed</text>
+          <circle cx="198" cy="18" r="6" fill="#0D9488" />
+        </g>
+
+        <!-- Div 3 -->
+        <g transform="translate(0, 84)">
+          <rect x="0" y="0" width="213" height="36" rx="6" fill="#09202A" stroke="#133845" stroke-width="1" />
+          <text x="12" y="16" fill="#E2E8F0" font-family="sans-serif" font-size="10.5" font-weight="bold">Divisi Pengembangan SDM</text>
+          <text x="12" y="29" fill="#94A3B8" font-family="sans-serif" font-size="9.5">Kaderisasi &amp; Pemberdayaan Anggota</text>
+          <circle cx="198" cy="18" r="6" fill="#0284C7" />
+        </g>
+
+        <!-- Div 4 -->
+        <g transform="translate(0, 126)">
+          <rect x="0" y="0" width="213" height="36" rx="6" fill="#09202A" stroke="#133845" stroke-width="1" />
+          <text x="12" y="16" fill="#E2E8F0" font-family="sans-serif" font-size="10.5" font-weight="bold">Divisi Seni, Budaya &amp; Olahraga</text>
+          <text x="12" y="29" fill="#94A3B8" font-family="sans-serif" font-size="9.5">Minat Bakat &amp; Pelestarian Tradisi</text>
+          <circle cx="198" cy="18" r="6" fill="#D97706" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
